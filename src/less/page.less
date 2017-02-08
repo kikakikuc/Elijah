@@ -1,2 +1,167 @@
 // PAGE
-// 
+//
+body {
+	color: @elijah-dark;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+p {
+	.font-size(16px);
+}
+.Light-text {
+	color: @elijah-light;
+	padding: 30px 0;
+	text-align: center;
+}
+.Orange-text {
+	color: @elijah-orange;
+}
+.home {
+	background-image: url(../images/index/home.jpg);
+	background-size: cover;
+	color: white;
+	font-weight: 700;
+	.logo {
+		background-color: #959595;
+		font-size: 100px;
+		margin: 100px 0;
+	}
+	h1 {
+		font-weight: 700;
+	}
+	i {
+		padding: 100px;
+	}
+}
+
+nav {
+	padding: 20px 40px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	.navbar-header {
+		h1{
+			.Orange-text;
+		}
+	}
+	ul {
+		li {
+			.separator {
+				height: 2px;
+				width: 50%;
+				background-color: @elijah-orange;
+				opacity: 0;
+				margin: 0 auto;
+			}
+			&:focus,&:hover {
+				.separator {
+					opacity: 1;
+				}
+			}
+			a{
+				font-size: 18px;
+				&:focus, &:hover {
+					.Orange-text;
+				}
+			}
+		}
+		.active {
+			a {
+				.Orange-text;
+			}
+			.separator {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#about {
+	.heading{
+		padding: 160px 0;
+		margin: 0 auto;
+		.title-circle {
+			position: relative;
+			.circle {
+			width: 175px;
+			height: 175px;
+			border-radius: 50%;
+			}
+			#orange-circle {
+				background-color: @elijah-orange;
+				position: absolute;
+				left: 100px;
+			}
+			#dark-circle {
+				background-color: @elijah-dark;
+			}
+			.title {
+				.font-size(60px);
+				position: absolute;
+				font-family: 'Oswald', sans-serif;
+				top: 45px;
+				left: 25px;
+				z-index: 1;
+				color: white;
+			}
+		}
+		h3 {
+			padding: 30px 0;
+		}
+
+	}
+	.feature {
+		article {
+			span {
+				.fa-circle {
+					color: @elijah-orange;
+				}
+				i {
+					&:last-child {
+						color: white;
+					}
+				}
+			}
+			h3 {
+				padding: 20px;
+			}
+			&:hover {
+				h3 {
+					.Orange-text;
+				}
+			}
+		}
+	}
+	.intro-skill {
+		&>p {
+			.Light-text;
+		}
+		.progress {
+			background-color: @elijah-dark;
+			margin-bottom: 15px;
+			.progress-bar {
+				background-color: @elijah-orange;
+				color: white;
+				padding: 8px 20px;
+				span {
+					float: right;
+				}
+			}
+		}
+	}
+	.fun-fact {
+		&>p {
+			.Light-text;
+		}
+		article {
+			padding: 10px;
+			.number {
+				.font-size(60px);
+				.Orange-text;
+			}
+			p {
+				padding: 15px 0;
+			}
+		}
+	}
+}

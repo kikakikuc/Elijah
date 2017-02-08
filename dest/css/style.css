@@ -4010,3 +4010,159 @@ select {
 }
 /* IV. SKELETON
 ***********************/
+body {
+  color: #566065;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+p {
+  font-size: 160pxpx;
+  font-size: 16pxrem;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+.Light-text {
+  color: #c3c3c3;
+  padding: 30px 0;
+  text-align: center;
+}
+.Orange-text {
+  color: #f89a3d;
+}
+.home {
+  background-image: url(../images/index/home.jpg);
+  background-size: cover;
+  color: white;
+  font-weight: 700;
+}
+.home .logo {
+  background-color: #959595;
+  font-size: 100px;
+  margin: 100px 0;
+}
+.home h1 {
+  font-weight: 700;
+}
+.home i {
+  padding: 100px;
+}
+nav {
+  padding: 20px 40px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+nav .navbar-header h1 {
+  color: #f89a3d;
+}
+nav ul li .separator {
+  height: 2px;
+  width: 50%;
+  background-color: #f89a3d;
+  opacity: 0;
+  margin: 0 auto;
+}
+nav ul li:focus .separator,
+nav ul li:hover .separator {
+  opacity: 1;
+}
+nav ul li a {
+  font-size: 18px;
+}
+nav ul li a:focus,
+nav ul li a:hover {
+  color: #f89a3d;
+}
+nav ul .active a {
+  color: #f89a3d;
+}
+nav ul .active .separator {
+  opacity: 1;
+}
+#about .heading {
+  padding: 160px 0;
+  margin: 0 auto;
+}
+#about .heading .title-circle {
+  position: relative;
+}
+#about .heading .title-circle .circle {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
+#about .heading .title-circle #orange-circle {
+  background-color: #f89a3d;
+  position: absolute;
+  left: 100px;
+}
+#about .heading .title-circle #dark-circle {
+  background-color: #566065;
+}
+#about .heading .title-circle .title {
+  font-size: 600pxpx;
+  font-size: 60pxrem;
+  font-size: 60px;
+  font-size: 6rem;
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  top: 45px;
+  left: 25px;
+  z-index: 1;
+  color: white;
+}
+#about .heading h3 {
+  padding: 30px 0;
+}
+#about .feature article span .fa-circle {
+  color: #f89a3d;
+}
+#about .feature article span i:last-child {
+  color: white;
+}
+#about .feature article h3 {
+  padding: 20px;
+}
+#about .feature article:hover h3 {
+  color: #f89a3d;
+}
+#about .intro-skill > p {
+  color: #c3c3c3;
+  padding: 30px 0;
+  text-align: center;
+}
+#about .intro-skill .progress {
+  background-color: #566065;
+  margin-bottom: 15px;
+}
+#about .intro-skill .progress .progress-bar {
+  background-color: #f89a3d;
+  color: white;
+  padding: 8px 20px;
+}
+#about .intro-skill .progress .progress-bar span {
+  float: right;
+}
+#about .fun-fact > p {
+  color: #c3c3c3;
+  padding: 30px 0;
+  text-align: center;
+}
+#about .fun-fact article {
+  padding: 10px;
+}
+#about .fun-fact article .number {
+  font-size: 600pxpx;
+  font-size: 60pxrem;
+  font-size: 60px;
+  font-size: 6rem;
+  color: #f89a3d;
+}
+#about .fun-fact article p {
+  padding: 15px 0;
+}

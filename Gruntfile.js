@@ -64,7 +64,7 @@ module.exports = function(grunt) {
 				},
 				options: {
 					watchTask: true,
-					proxy: "http://localhost/"
+					proxy: "http://localhost/Elijah/dest/"
 				}
 			}
 		},
@@ -109,9 +109,13 @@ module.exports = function(grunt) {
 		-------------------------------------------*/
 		concat: {
 			js: {
-				src: ['<%= src_js %>/*.js','!<%= src_js %>/custom.js','<%= src_js %>/custom.js'],
+				src: ['<%= src_js %>/*.js','!<%= src_js %>/custom.js'],
 				dest: '<%= dest_js %>/plugins.js'
 			},
+			extras:{
+                src: ['<%= src_js %>/custom.js'],
+                dest: '<%= dest_js %>/custom.js'
+            },
 			css: {
 				src: '<%= src_css %>/*.css',
 				dest: '<%= dest_css %>/plugins.css'
@@ -134,6 +138,10 @@ module.exports = function(grunt) {
 						},
 						section: {
 							demo_section: '<%= src_html %>/demo_section.html',
+							home_section: '<%= src_html %>/home_section.html',
+							nav_section: '<%= src_html %>/nav_section.html',
+							about_section: '<%= src_html %>/about_section.html',
+
 						},
 						widget: {
 							demo_widget: '<%= src_html %>/demo_widget.html',
