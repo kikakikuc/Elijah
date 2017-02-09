@@ -4020,6 +4020,7 @@ h4,
 h5,
 h6 {
   font-weight: 300;
+  font-family: 'Oswald', sans-serif;
 }
 .container-fluid {
   padding: 0;
@@ -4146,8 +4147,12 @@ nav ul .active .separator {
   z-index: 1;
   color: white;
 }
-.heading h3 {
+.heading h2 {
   padding: 30px 0;
+  font-family: 'Lato', sans-serif;
+}
+.heading h2 span {
+  color: #f89a3d;
 }
 #about .feature article span .fa-circle {
   color: #f89a3d;
@@ -4213,4 +4218,61 @@ nav ul .active .separator {
 }
 .quote h1 {
   padding: 40px 0;
+}
+#team .members figure .view-profile {
+  background-image: url(../images/index/members.jpg);
+  background-size: cover;
+  padding: 90px 0;
+}
+#team .members figure .view-profile h4 {
+  padding: 15px 0;
+  font-weight: 700;
+  background-color: #566065;
+  color: white;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+}
+#team .members figure .view-profile:hover h4 {
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  -webkit-opacity: 0.6;
+  opacity: 0.6;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+  filter: alpha(opacity=60);
+}
+#team .members figure figcaption {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+}
+#team .members figure figcaption .position {
+  font-size: 140pxpx;
+  font-size: 14pxrem;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #afb6ba;
+}
+#team .members figure p {
+  color: #afb6ba;
+}
+#team .clients {
+  padding: 40px 0;
+}
+#team .clients p:first-child {
+  color: #c3c3c3;
+  padding: 30px 0;
+  text-align: center;
+}
+#team .clients p:nth-child(3) {
+  padding: 20px 0;
+}
+#team .clients figure {
+  padding: 40px 0;
+}
+#team .clients figure a {
+  padding: 20px;
 }
