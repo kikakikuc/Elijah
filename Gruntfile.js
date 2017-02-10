@@ -146,6 +146,7 @@ module.exports = function(grunt) {
 							service_section: '<%= src_html %>/service_section.html',
 							portfolio_section: '<%= src_html %>/portfolio_section.html',
 							pricing_section: '<%= src_html %>/pricing_section.html',
+							contact_section: '<%= src_html %>/contact_section.html',
 						},
 						widget: {
 							demo_widget: '<%= src_html %>/demo_widget.html',

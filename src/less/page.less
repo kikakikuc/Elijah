@@ -441,3 +441,24 @@ nav {
 		display: inline;
 	}
 }
+#contact {
+	.contact-info {
+		background-image: url(../images/index/contact.jpg);
+		background-size: cover;
+		background-position: center;
+		background-color: black;
+		padding: 140px 0;
+		margin: 0 auto;
+		form {
+			padding: 70px;
+			background-color: white;
+			button {
+				.Background-color(@elijah-orange);
+				border-color: @elijah-orange;
+				&:hover {
+					.Background-color(white);
+					.Text-orange;				}
+			}
+		}
+	}
+}

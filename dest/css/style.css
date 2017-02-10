@@ -4513,3 +4513,25 @@ nav ul .active .separator {
   padding: 5px 30px;
   display: inline;
 }
+#contact .contact-info {
+  background-image: url(../images/index/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  padding: 140px 0;
+  margin: 0 auto;
+}
+#contact .contact-info form {
+  padding: 70px;
+  background-color: white;
+}
+#contact .contact-info form button {
+  background-color: #f89a3d;
+  color: white;
+  border-color: #f89a3d;
+}
+#contact .contact-info form button:hover {
+  background-color: white;
+  color: white;
+  color: #f89a3d;
+}
