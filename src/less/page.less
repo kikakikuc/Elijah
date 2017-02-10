@@ -348,7 +348,7 @@ nav {
 		}
 		.grid {
 			max-width: 1600px;
-			figure {
+			figure { 
 				display: inline-block;
 				position: relative;
 				width: 400px;
@@ -375,5 +375,69 @@ nav {
 			}
 		}
 
+	}
+}
+
+#pricing {
+	ul {
+		.pricing-circle {
+			width: 140px;
+			height: 140px;
+			text-align: center;
+			display: inline-block;
+			padding: 35px;
+			.Background-color(@elijah-dark);
+			.font-size(48px);
+			margin: 40px 0;
+		}
+		h2 {
+			padding: 20px 0;
+		}
+		button {
+			margin: 40px 0;
+			padding: 10px 20px;
+			font-weight: 400;
+			.Background-color(@elijah-dark);
+		}
+		margin: 0;
+		&:hover {
+			border-color: @elijah-yellow;
+			li {
+				.Background-color(#fff0a8);
+				color: @elijah-dark;
+				
+				&:first-child, &:last-child {
+					.Background-color(@elijah-yellow);
+					.pricing-circle {
+						.Background-color(white);
+						color: @elijah-yellow;
+						margin: 40px 0;
+					}
+					.opacity(0.8);
+					button {
+						.Background-color(white);
+						color: @elijah-yellow;
+					}
+				}
+			}
+		}
+	}
+}
+.company-information {
+	font-family: 'Oswald', sans-serif;
+	margin-top: 100px;
+	.keep-in-touch {
+		.font-size(60px);
+		font-weight: 700;
+	}
+	.address {
+		.font-size(48px);
+		font-weight: 300;
+		padding: 20px 0 50px 0;
+	}
+	h2 {
+		.Background-color(black);
+		padding: 5px 30px;
+		display: inline;
 	}
 }
