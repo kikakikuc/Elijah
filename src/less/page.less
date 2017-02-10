@@ -36,7 +36,6 @@ p {
 	background-image: url(../images/index/home.jpg);
 	background-size: cover;
 	background-position: center;
-	 background-repeat: no-repeat;
 	color: white;
 	font-weight: 700;
 	.logo {
@@ -325,5 +324,56 @@ nav {
 			}
 			padding-bottom: 100px;
 		}
+	}
+}
+
+#portfolio {
+	.portfolio-iso {
+		margin: 70px 0;
+		ul {
+			li {
+				.Background-color(@elijah-orange);
+				.font-size(24px);
+				padding: 0px 30px;
+				margin: 0 10px 40px 10px;
+				border-color: @elijah-orange;
+				border-radius: 20px;
+				&:hover {
+					.Background-color(white);
+					.Text-orange;
+					border-color: @elijah-orange;
+					cursor: pointer;
+				}
+			}
+		}
+		.grid {
+			max-width: 1600px;
+			figure {
+				display: inline-block;
+				position: relative;
+				width: 400px;
+				height: 268px;
+				figcaption {
+					.Background-color(@elijah-orange);
+					position: absolute;
+					top: 0;
+					color: white;
+					width: 100%;
+					height: 100%;
+					padding: 100px 0;
+					.separator {
+						height: 2px;
+						width: 30%;
+						margin: 10px auto;
+						background-color: white;
+					}
+					.opacity(0);
+					&:hover {
+						.opacity(1);
+					}
+				}
+			}
+		}
+
 	}
 }
