@@ -4,8 +4,13 @@ body {
 	color: @elijah-dark;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 300;
 	font-family: 'Oswald', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+h1 {
+	font-weight: 400;
 }
 .container-fluid {
 	padding: 0;
@@ -30,15 +35,18 @@ p {
 .home {
 	background-image: url(../images/index/home.jpg);
 	background-size: cover;
+	background-position: center;
+	 background-repeat: no-repeat;
 	color: white;
 	font-weight: 700;
 	.logo {
 		background-color: #959595;
 		font-size: 100px;
-		margin: 100px 0;
+		margin: 85px 0;
 	}
 	h1 {
-		font-weight: 700;
+		font-family: 'Lato', sans-serif;
+		line-height: 40px;
 		span {
 			.Background-color(@elijah-orange);
 			padding: 0 5px 0 10px;
@@ -183,16 +191,35 @@ nav {
 	}
 }
 .quote {
-	.Background-color(@elijah-brown);
-	.opacity(0.8);
-	padding: 80px 0;
-	i {
+	background-image: url(../images/index/quote.jpg);
+	background-position: center;
+	i, h6 {
 		.Text-orange;
 	}
 	h1 {
 		padding: 40px 0;
+		font-weight: 300;
+		span{
+			.Text-orange;
+		}
+	}
+	h6 {
+		padding: 15px;
+	}
+	button {
+		.Background-color(@elijah-orange);
+		.font-size(24px);
+		padding: 0 15px;
+		i{
+			color: white;
+		}
 	}
 	
+}
+.brown-filter {
+	.Background-color(@elijah-brown);
+	.opacity(0.7);
+	padding: 80px 0;
 }
 #team {
 	.members {
@@ -243,6 +270,60 @@ nav {
 			a{
 				padding: 20px;
 			}
+		}
+	}
+}
+#services {
+	.service-content {
+		article {
+			padding: 20px;
+			i {
+				display: inline-block;
+				float: left;
+				padding: 0 25px 10px 10px;
+			}
+			h3 {
+				display: inline;
+				font-weight: 400;
+			}
+			p {
+				padding: 10px 0;
+			}
+		}
+	}
+	.testimonial {
+		font-family: 'Open Sans', sans-serif;
+		&>p {
+			.Light-text;
+		}
+		
+		.client {
+			&>p {
+				font-style: Italic;
+				padding: 70px 0;
+			}
+			figure {
+				padding: 0;
+				img {
+					width: 100px;
+					height: 100px;
+					&[alt]{
+						.Background-color(@elijah-light);					}
+
+				}
+			}
+			figcaption {
+				padding: 20px 0;
+				p {
+					font-weight: 400;
+					.font-size(16px);
+				}
+				h6 {
+					font-style: Italic;
+					.font-size(12px);
+				}
+			}
+			padding-bottom: 100px;
 		}
 	}
 }

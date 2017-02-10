@@ -4019,8 +4019,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 300;
   font-family: 'Oswald', sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+h1 {
+  font-weight: 400;
 }
 .container-fluid {
   padding: 0;
@@ -4044,16 +4053,19 @@ p {
 .home {
   background-image: url(../images/index/home.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   font-weight: 700;
 }
 .home .logo {
   background-color: #959595;
   font-size: 100px;
-  margin: 100px 0;
+  margin: 85px 0;
 }
 .home h1 {
-  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  line-height: 40px;
 }
 .home h1 span {
   background-color: #f89a3d;
@@ -4203,21 +4215,45 @@ nav ul .active .separator {
   padding: 15px 0;
 }
 .quote {
-  background-color: #5f564d;
-  color: white;
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  -webkit-opacity: 0.8;
-  opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-  filter: alpha(opacity=80);
-  padding: 80px 0;
+  background-image: url(../images/index/quote.jpg);
+  background-position: center;
 }
-.quote i {
+.quote i,
+.quote h6 {
   color: #f89a3d;
 }
 .quote h1 {
   padding: 40px 0;
+  font-weight: 300;
+}
+.quote h1 span {
+  color: #f89a3d;
+}
+.quote h6 {
+  padding: 15px;
+}
+.quote button {
+  background-color: #f89a3d;
+  color: white;
+  font-size: 240pxpx;
+  font-size: 24pxrem;
+  font-size: 24px;
+  font-size: 2.4rem;
+  padding: 0 15px;
+}
+.quote button i {
+  color: white;
+}
+.brown-filter {
+  background-color: #473c32;
+  color: white;
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -webkit-opacity: 0.7;
+  opacity: 0.7;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+  filter: alpha(opacity=70);
+  padding: 80px 0;
 }
 #team .members figure .view-profile {
   background-image: url(../images/index/members.jpg);
@@ -4275,4 +4311,62 @@ nav ul .active .separator {
 }
 #team .clients figure a {
   padding: 20px;
+}
+#services .service-content article {
+  padding: 20px;
+}
+#services .service-content article i {
+  display: inline-block;
+  float: left;
+  padding: 0 25px 10px 10px;
+}
+#services .service-content article h3 {
+  display: inline;
+  font-weight: 400;
+}
+#services .service-content article p {
+  padding: 10px 0;
+}
+#services .testimonial {
+  font-family: 'Open Sans', sans-serif;
+}
+#services .testimonial > p {
+  color: #c3c3c3;
+  padding: 30px 0;
+  text-align: center;
+}
+#services .testimonial .client {
+  padding-bottom: 100px;
+}
+#services .testimonial .client > p {
+  font-style: Italic;
+  padding: 70px 0;
+}
+#services .testimonial .client figure {
+  padding: 0;
+}
+#services .testimonial .client figure img {
+  width: 100px;
+  height: 100px;
+}
+#services .testimonial .client figure img[alt] {
+  background-color: #c3c3c3;
+  color: white;
+}
+#services .testimonial .client figcaption {
+  padding: 20px 0;
+}
+#services .testimonial .client figcaption p {
+  font-weight: 400;
+  font-size: 160pxpx;
+  font-size: 16pxrem;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+#services .testimonial .client figcaption h6 {
+  font-style: Italic;
+  font-size: 120pxpx;
+  font-size: 12pxrem;
+  font-size: 12px;
+  font-size: 1.2rem;
 }
