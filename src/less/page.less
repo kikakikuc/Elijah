@@ -29,8 +29,8 @@ p {
 .Text-orange {
 	color: @elijah-orange;
 }
-.Background-color(@background) {
-	background-color: @background;
+.Background(@color) {
+	background-color: @color;
 	color: white;
 }
 .home {
@@ -48,7 +48,7 @@ p {
 		font-family: 'Lato', sans-serif;
 		line-height: 40px;
 		span {
-			.Background-color(@elijah-orange);
+			.Background(@elijah-orange);
 			padding: 0 5px 0 10px;
 		}
 	}
@@ -72,7 +72,7 @@ nav {
 				height: 2px;
 				width: 50%;
 				margin: 0 auto;
-				.Background-color(@elijah-orange);
+				.Background(@elijah-orange);
 				.opacity(0);
 			}
 			&:focus,&:hover {
@@ -110,12 +110,12 @@ nav {
 			border-radius: 50%;
 			}
 			#orange-circle {
-				.Background-color(@elijah-orange);
+				.Background(@elijah-orange);
 				position: absolute;
 				left: 100px;
 			}
 			#dark-circle {
-				.Background-color(@elijah-dark);
+				.Background(@elijah-dark);
 			}
 			.title {
 				.font-size(60px);
@@ -163,10 +163,10 @@ nav {
 			.Light-text;
 		}
 		.progress {
-			.Background-color(@elijah-dark);
+			.Background(@elijah-dark);
 			margin-bottom: 15px;
 			.progress-bar {
-				.Background-color(@elijah-orange);
+				.Background(@elijah-orange);
 				padding: 8px 20px;
 				span {
 					float: right;
@@ -207,7 +207,7 @@ nav {
 		padding: 15px;
 	}
 	button {
-		.Background-color(@elijah-orange);
+		.Background(@elijah-orange);
 		.font-size(24px);
 		padding: 0 15px;
 		i{
@@ -217,7 +217,7 @@ nav {
 	
 }
 .brown-filter {
-	.Background-color(@elijah-brown);
+	.Background(@elijah-brown);
 	.opacity(0.7);
 	padding: 80px 0;
 }
@@ -231,7 +231,7 @@ nav {
 				h4{
 					padding: 15px 0;
 					font-weight: 700;
-					.Background-color(@elijah-dark);
+					.Background(@elijah-dark);
 					.opacity(0);
 				}
 				&:hover {
@@ -273,6 +273,12 @@ nav {
 		}
 	}
 }
+.twitter {
+	.item {
+		background-image: url(.../images/index/twitter.jpg);
+		.brown-filter;
+	}
+}
 #services {
 	.service-content {
 		article {
@@ -308,7 +314,7 @@ nav {
 					width: 100px;
 					height: 100px;
 					&[alt]{
-						.Background-color(@elijah-light);					}
+						.Background(@elijah-light);					}
 
 				}
 			}
@@ -333,14 +339,14 @@ nav {
 		margin: 70px 0;
 		ul {
 			li {
-				.Background-color(@elijah-orange);
+				.Background(@elijah-orange);
 				.font-size(24px);
 				padding: 0px 30px;
 				margin: 0 10px 40px 10px;
 				border-color: @elijah-orange;
 				border-radius: 20px;
 				&:hover {
-					.Background-color(white);
+					.Background(white);
 					.Text-orange;
 					border-color: @elijah-orange;
 					cursor: pointer;
@@ -355,7 +361,7 @@ nav {
 				width: 400px;
 				height: 268px;
 				figcaption {
-					.Background-color(@elijah-orange);
+					.Background(@elijah-orange);
 					position: absolute;
 					top: 0;
 					color: white;
@@ -387,7 +393,7 @@ nav {
 			text-align: center;
 			display: inline-block;
 			padding: 35px;
-			.Background-color(@elijah-dark);
+			.Background(@elijah-dark);
 			.font-size(48px);
 			margin: 40px 0;
 		}
@@ -398,25 +404,25 @@ nav {
 			margin: 40px 0;
 			padding: 10px 20px;
 			font-weight: 400;
-			.Background-color(@elijah-dark);
+			.Background(@elijah-dark);
 		}
 		margin: 0;
 		&:hover {
 			border-color: @elijah-yellow;
 			li {
-				.Background-color(#fff0a8);
+				.Background(#fff0a8);
 				color: @elijah-dark;
 				
 				&:first-child, &:last-child {
-					.Background-color(@elijah-yellow);
+					.Background(@elijah-yellow);
 					.pricing-circle {
-						.Background-color(white);
+						.Background(white);
 						color: @elijah-yellow;
 						margin: 40px 0;
 					}
 					.opacity(0.8);
 					button {
-						.Background-color(white);
+						.Background(white);
 						color: @elijah-yellow;
 					}
 				}
@@ -437,7 +443,7 @@ nav {
 		padding: 20px 0 50px 0;
 	}
 	h2 {
-		.Background-color(black);
+		.Background(black);
 		padding: 5px 30px;
 		display: inline;
 	}
@@ -454,10 +460,10 @@ nav {
 			padding: 70px;
 			background-color: white;
 			button {
-				.Background-color(@elijah-orange);
+				.Background(@elijah-orange);
 				border-color: @elijah-orange;
 				&:hover {
-					.Background-color(white);
+					.Background(white);
 					.Text-orange;				}
 			}
 		}

@@ -143,6 +143,7 @@ module.exports = function(grunt) {
 							about_section: '<%= src_html %>/about_section.html',
 							quote_section: '<%= src_html %>/quote_section.html',
 							team_section: '<%= src_html %>/team_section.html',
+							twitter_section: '<%= src_html %>/twitter_section.html',
 							service_section: '<%= src_html %>/service_section.html',
 							portfolio_section: '<%= src_html %>/portfolio_section.html',
 							pricing_section: '<%= src_html %>/pricing_section.html',
