@@ -21,7 +21,7 @@ p {
 	.font-size(16px);
 	font-weight: 300;
 }
-.Light-text {
+.Text-light {
 	color: @elijah-light;
 	padding: 30px 0;
 	text-align: center;
@@ -39,14 +39,17 @@ p {
 	background-position: center;
 	color: white;
 	font-weight: 700;
+	padding: 90px 0;
+	height: 825px;
 	.logo {
 		background-color: #959595;
 		font-size: 100px;
-		margin: 85px 0;
+		padding: 25px;
 	}
 	h1 {
 		font-family: 'Lato', sans-serif;
 		line-height: 40px;
+		padding: 70px;
 		span {
 			.Background(@elijah-orange);
 			padding: 0 5px 0 10px;
@@ -99,16 +102,16 @@ nav {
 }
 .heading{
 		padding: 160px 0;
-		margin: 0 auto;
+		
 		.title-circle {
 			position: relative;
 			width: 270px;
 			margin: 0 auto;
 			.circle {
-			width: 175px;
-			height: 175px;
-			border-radius: 50%;
-			}
+				width: 175px;
+				height: 175px;
+				border-radius: 50%;
+				}
 			#orange-circle {
 				.Background(@elijah-orange);
 				position: absolute;
@@ -119,12 +122,11 @@ nav {
 			}
 			.title {
 				.font-size(60px);
-				position: absolute;
+				.absolute-center();
 				font-family: 'Oswald', sans-serif;
-				top: 45px;
-				left: 20px;
 				z-index: 1;
 				color: white;
+				height: 90px;
 			}
 		}
 		h2 {
@@ -160,23 +162,25 @@ nav {
 	}
 	.intro-skill {
 		&>p {
-			.Light-text;
+			.Text-light;
 		}
 		.progress {
 			.Background(@elijah-dark);
-			margin-bottom: 15px;
 			.progress-bar {
 				.Background(@elijah-orange);
-				padding: 8px 20px;
+				padding: 0px 20px;
+				display: -webkit-flex;
+				-webkit-align-items: center;
 				span {
 					float: right;
 				}
 			}
+			height: 35px;
 		}
 	}
 	.fun-fact {
 		&>p {
-			.Light-text;
+			.Text-light;
 		}
 		article {
 			padding: 10px;
@@ -259,7 +263,7 @@ nav {
 		padding: 40px 0;
 		p{
 			&:first-child {
-				.Light-text;
+				.Text-light;
 			}
 			&:nth-child(3) {
 				padding: 20px 0;
@@ -276,6 +280,7 @@ nav {
 .twitter {
 	.item {
 		background-image: url(.../images/index/twitter.jpg);
+		height: 500px;
 		.brown-filter;
 	}
 }
@@ -300,7 +305,7 @@ nav {
 	.testimonial {
 		font-family: 'Open Sans', sans-serif;
 		&>p {
-			.Light-text;
+			.Text-light;
 		}
 		
 		.client {

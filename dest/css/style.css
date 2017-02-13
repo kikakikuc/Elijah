@@ -4043,7 +4043,7 @@ p {
   font-size: 1.6rem;
   font-weight: 300;
 }
-.Light-text {
+.Text-light {
   color: #c3c3c3;
   padding: 30px 0;
   text-align: center;
@@ -4057,15 +4057,18 @@ p {
   background-position: center;
   color: white;
   font-weight: 700;
+  padding: 90px 0;
+  height: 825px;
 }
 .home .logo {
   background-color: #959595;
   font-size: 100px;
-  margin: 85px 0;
+  padding: 25px;
 }
 .home h1 {
   font-family: 'Lato', sans-serif;
   line-height: 40px;
+  padding: 70px;
 }
 .home h1 span {
   background-color: #f89a3d;
@@ -4125,7 +4128,6 @@ nav ul .active .separator {
 }
 .heading {
   padding: 160px 0;
-  margin: 0 auto;
 }
 .heading .title-circle {
   position: relative;
@@ -4152,12 +4154,16 @@ nav ul .active .separator {
   font-size: 60pxrem;
   font-size: 60px;
   font-size: 6rem;
+  margin: auto;
   position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   font-family: 'Oswald', sans-serif;
-  top: 45px;
-  left: 20px;
   z-index: 1;
   color: white;
+  height: 90px;
 }
 .heading h2 {
   padding: 30px 0;
@@ -4186,12 +4192,14 @@ nav ul .active .separator {
 #about .intro-skill .progress {
   background-color: #566065;
   color: white;
-  margin-bottom: 15px;
+  height: 35px;
 }
 #about .intro-skill .progress .progress-bar {
   background-color: #f89a3d;
   color: white;
-  padding: 8px 20px;
+  padding: 0px 20px;
+  display: -webkit-flex;
+  -webkit-align-items: center;
 }
 #about .intro-skill .progress .progress-bar span {
   float: right;
@@ -4314,6 +4322,7 @@ nav ul .active .separator {
 }
 .twitter .item {
   background-image: url(.../images/index/twitter.jpg);
+  height: 500px;
   background-color: #473c32;
   color: white;
   -moz-opacity: 0.7;
