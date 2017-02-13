@@ -4011,6 +4011,7 @@ select {
 /* IV. SKELETON
 ***********************/
 body {
+  margin: 0 auto;
   color: #566065;
 }
 h1,
@@ -4534,4 +4535,52 @@ nav ul .active .separator {
   background-color: white;
   color: white;
   color: #f89a3d;
+}
+footer {
+  background-color: #333333;
+  color: #a9a9a9;
+  font-family: 'Lato', sans-serif;
+}
+footer .prefooter .prefooter-content {
+  padding: 50px 0;
+}
+footer .prefooter .prefooter-content h4 {
+  padding: 50px 0;
+  color: white;
+  font-weight: 700;
+}
+footer .prefooter .prefooter-content .recent-post figure img {
+  width: 70px;
+  height: 70px;
+  margin: 7px;
+  float: left;
+  display: inline-block;
+}
+footer .prefooter .prefooter-content .recent-post figure figcaption h6 {
+  color: #6e6e6e;
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+}
+footer .prefooter .prefooter-content .tags ul li {
+  background-color: black;
+  padding: 5px 15px;
+  margin: 5px;
+}
+footer .prefooter .prefooter-content .flickr-galary img {
+  margin: 0 4px 8px 0;
+}
+footer .prefooter hr {
+  background-color: #494949;
+}
+footer .prefooter .social li {
+  padding-right: 47px;
+}
+footer .prefooter .social li h4 {
+  font-weight: 700;
+}
+footer .footer {
+  background-color: black;
+}
+footer .footer p {
+  padding: 20px 0;
 }
