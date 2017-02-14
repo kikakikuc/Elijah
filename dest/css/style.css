@@ -4035,6 +4035,10 @@ h1 {
 .container-fluid {
   padding: 0;
 }
+a:focus,
+a:hover {
+  text-decoration: none;
+}
 p {
   font-family: 'Lato', sans-serif;
   font-size: 160pxpx;
@@ -4556,6 +4560,175 @@ nav ul .active .separator {
   background-color: white;
   color: white;
   color: #f89a3d;
+}
+.blog h3,
+.blog p {
+  color: black;
+}
+.blog .btn {
+  background-color: #f89a3d;
+  color: white;
+  font-size: 140pxpx;
+  font-size: 14pxrem;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-family: 'Oswald', sans-serif;
+  border: 2px solid #f9a959;
+  border-bottom: 4px solid #dd8833;
+  margin: 20px 0;
+}
+.blog .blog-main figcaption {
+  padding: 40px 40px 70px 40px;
+}
+.blog .blog-main figcaption ul {
+  padding-top: 30px;
+  color: #c3c3c3;
+}
+.blog .blog-main figcaption ul li {
+  padding-right: 20px;
+}
+.blog .blog-main figcaption blockquote {
+  border-color: #abcdc0;
+  margin-left: 20px;
+}
+.blog .blog-main figcaption blockquote p {
+  color: #c3c3c3;
+  font-style: normal;
+}
+.blog .blog-main figcaption .prev-next {
+  margin-top: 35px;
+}
+.blog .blog-main figcaption .prev {
+  color: #c3c3c3;
+}
+.blog .blog-main .author-box {
+  padding: 30px 0;
+}
+.blog .blog-main .author-box figcaption {
+  padding: 0;
+}
+.blog .blog-main .author-box figcaption i {
+  float: right;
+  color: #c3c3c3;
+  margin: 0 5px;
+}
+.blog .blog-main .author-box figcaption p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+.blog .blog-main .author-box figcaption .report-reply,
+.blog .blog-main .author-box figcaption a {
+  color: #c3c3c3;
+}
+.blog .blog-main h4 {
+  padding: 40px 0;
+  color: black;
+}
+.blog .blog-main .comment-form {
+  padding-bottom: 150px;
+}
+.blog .blog-main .comment-form .form-control {
+  background-color: #e4f4ee;
+  margin: 20px 0;
+  padding: 20px 20px;
+  border: none;
+  border-top: #dae9e4;
+}
+.blog .blog-main .comment-form input::-webkit-placeholder {
+  color: #a8baa9;
+}
+.blog .blog-main .pager li a {
+  background-color: #f89a3d;
+  color: white;
+  font-size: 140pxpx;
+  font-size: 14pxrem;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-family: 'Oswald', sans-serif;
+  border: 2px solid #f9a959;
+  border-bottom: 4px solid #dd8833;
+  margin: 20px 0;
+  padding: 5px 30px;
+  margin-bottom: 100px;
+}
+.blog .blog-sidebar figure img:first-child {
+  position: relative;
+}
+.blog .blog-sidebar figure img:last-child {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+.blog .blog-sidebar figcaption h3 {
+  font-family: 'Alex Brush', cursive;
+}
+.blog .blog-sidebar figcaption p {
+  padding: 40px 25px;
+}
+.blog .blog-sidebar form {
+  padding: 0 25px;
+}
+.blog .blog-sidebar form input {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 2px solid #c3c3c3;
+}
+.blog .blog-sidebar .heading {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  margin: 40px 0;
+  font-family: 'Oswald', sans-serif;
+}
+.blog .blog-sidebar .sidebar-content {
+  padding: 10px 0;
+}
+.blog .blog-sidebar .sidebar-content p span {
+  font-size: 140pxpx;
+  font-size: 14pxrem;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #c3c3c3;
+}
+.blog .blog-sidebar .categories ul {
+  max-width: 100%;
+  margin: 0;
+}
+.blog .blog-sidebar .categories ul li span:first-child {
+  max-width: 93%;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.blog .blog-sidebar .categories ul li span:first-child:after {
+  content: " ......................................................................";
+}
+.blog .blog-sidebar .categories ul li span:last-child {
+  float: left;
+  overflow: hidden;
+  margin-left: 5px;
+  text-align: right;
+}
+.blog .blog-sidebar .tags li {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid #c3c3c3;
+}
+.blog .blog-sidebar .tags li a {
+  color: #afb6ba;
+}
+.blog .blog-sidebar .tags li a:hover {
+  color: #f89a3d;
+}
+.blog .blog-sidebar .advertisement img:nth-child(4) {
+  padding: 0 5px;
+}
+.blog .blog-sidebar .advertisement img:nth-child(7) {
+  text-align: right;
 }
 footer {
   background-color: #333333;
