@@ -4047,6 +4047,20 @@ p {
   font-size: 1.6rem;
   font-weight: 300;
 }
+.btn {
+  background-color: #f89a3d;
+  color: white;
+  font-size: 140pxpx;
+  font-size: 14pxrem;
+  font-size: 14px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-family: 'Oswald', sans-serif;
+  border: 1px solid #f9a959;
+  border-bottom: 4px solid #dd8833;
+  margin: 20px 0;
+}
 .Text-light {
   color: #c3c3c3;
   padding: 30px 0;
@@ -4428,11 +4442,13 @@ nav ul .active .separator {
 }
 #portfolio .portfolio-iso .grid figure figcaption {
   background-color: #f89a3d;
+  color: white;
+  margin: auto;
   position: absolute;
   top: 0;
-  color: white;
-  width: 100%;
-  height: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
   padding: 100px 0;
   -moz-opacity: 0;
   -khtml-opacity: 0;
@@ -4454,6 +4470,64 @@ nav ul .active .separator {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
   filter: alpha(opacity=100);
+}
+#portfolio .rating {
+  padding: 30px 0;
+}
+#portfolio .rating:not(i:last-child) {
+  color: #f89a3d;
+}
+#portfolio .portfolio_container figcaption p {
+  padding: 30px 0;
+}
+#portfolio .portfolio_container figcaption ul {
+  padding: 20px 0;
+  margin: 0;
+}
+#portfolio .portfolio_container figcaption ul li {
+  padding-top: 10px 0;
+}
+#portfolio .portfolio_container figcaption ul li span:first-child {
+  width: 110px;
+  fload: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#portfolio .portfolio_container figcaption ul li span:first-child:after {
+  content: "                                                          ";
+}
+#portfolio .portfolio_container figcaption ul li span:last-child {
+  float: left;
+}
+#portfolio .related-work figure {
+  position: relative;
+}
+#portfolio .related-work figure figcaption {
+  background-color: #f89a3d;
+  color: white;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 270px;
+  text-align: center;
+  padding: 70px 0;
+}
+#portfolio .comment-form {
+  padding-bottom: 150px;
+}
+#portfolio .comment-form .form-control {
+  margin: 10px 0;
+  padding: 20px 20px;
+  border-radius: 0;
+}
+#portfolio .comment-form .form-control[placeholder] {
+  color: #f89a3d;
+}
+#portfolio .comment-form button {
+  float: right;
 }
 #pricing ul {
   margin: 0;
@@ -4565,20 +4639,6 @@ nav ul .active .separator {
 .blog p {
   color: black;
 }
-.blog .btn {
-  background-color: #f89a3d;
-  color: white;
-  font-size: 140pxpx;
-  font-size: 14pxrem;
-  font-size: 14px;
-  font-size: 1.4rem;
-  border-radius: 5px;
-  padding: 5px 20px;
-  font-family: 'Oswald', sans-serif;
-  border: 2px solid #f9a959;
-  border-bottom: 4px solid #dd8833;
-  margin: 20px 0;
-}
 .blog .blog-main figcaption {
   padding: 40px 40px 70px 40px;
 }
@@ -4636,7 +4696,7 @@ nav ul .active .separator {
   border: none;
   border-top: #dae9e4;
 }
-.blog .blog-main .comment-form input::-webkit-placeholder {
+.blog .blog-main .comment-form .form-control[placeholder] {
   color: #a8baa9;
 }
 .blog .blog-main .pager li a {
@@ -4649,7 +4709,7 @@ nav ul .active .separator {
   border-radius: 5px;
   padding: 5px 20px;
   font-family: 'Oswald', sans-serif;
-  border: 2px solid #f9a959;
+  border: 1px solid #f9a959;
   border-bottom: 4px solid #dd8833;
   margin: 20px 0;
   padding: 5px 30px;
