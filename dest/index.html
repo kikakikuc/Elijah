@@ -43,7 +43,7 @@
 	<nav class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseNav">
-				<span class="glyphicon glyphicon-menu-hamburger"></span>
+				<i class="fa fa-bars"></i>
 			</button>
 			<h1>ELIJAH</h1>
 		</div>
@@ -54,7 +54,7 @@
 				<li><a href="#about">ABOUT</a><div class="separator"></div></li>
 				<li><a href="#team">TEAM</a><div class="separator"></div></li>
 				<li><a href="#services">SERVICES</a><div class="separator"></div></li>
-				<li><a href="#portfolio">PORTFOLIO</a><div class="separator"></div></li>
+				<li><a href="portfolio.html">PORTFOLIO</a><div class="separator"></div></li>
 				<li><a href="#pricing">PRICING</a><div class="separator"></div></li>
 				<li><a href="#contact">CONTACT</a><div class="separator"></div></li>
 				<li><a href="#pages">PAGE</a><div class="separator"></div></li>
@@ -67,7 +67,7 @@
 
 
 <section class="container" id="about">
-	<div class="heading text-center">
+	<div class="row heading text-center">
 		<div class="title-circle">
 			<div class="title">ABOUT US</div>
 			<div class="circle" id="orange-circle"></div>
@@ -163,7 +163,7 @@
 	</div>
 </section>
 <section class="container text-center" id="team">
-	<div class="heading">
+	<div class="container heading">
 		<div class="title-circle ">
 			<div class="title">OUR TEAM</div>
 			<div class="circle" id="orange-circle"></div>
@@ -173,42 +173,45 @@
 		<h2>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h2>
 	</div>
 
-	<div class="members row">
+	<div class="container-fluid members">
 		<figure class="col-md-4">
 			<div class="view-profile">
-				<h4>VIEW PROFILE</h4>
+				<img src="images/index/members.jpg" class="img-responsive">
+				<div class="over-lay"><h4>VIEW PROFILE</h4></div>
 			</div>
 			<figcaption class="row text-left">
-				<div class="col-lg-9">JOHN DOE</div>
-				<div class="col-lg-3 position">Founder</div>
+				<div class="col-xs-9 col-lg-9">JOHN DOE</div>
+				<div class="col-xs-3 col-lg-3 position">Founder</div>
 			</figcaption>
 			<p class="text-left">Vestibulum id felis arcu. In suscipit, tortor id accumsan interdum, urna ligula eleifend mi, eu ornare leo dui vitae sem. </p>
 		</figure>
 
 		<figure class="col-md-4">
 			<div class="view-profile">
-				<h4>VIEW PROFILE</h4>
+				<img src="images/index/members.jpg" class="img-responsive">
+				<div class="over-lay"><h4>VIEW PROFILE</h4></div>
 			</div>
 			<figcaption class="row text-left">
-				<div class="col-lg-9">JOHN DOE</div>
-				<div class="col-lg-3 position">Founder</div>
+				<div class="col-xs-9 col-lg-9">JOHN DOE</div>
+				<div class="col-xs-3 col-lg-3 position">Founder</div>
 			</figcaption>
 			<p class="text-left">Vestibulum id felis arcu. In suscipit, tortor id accumsan interdum, urna ligula eleifend mi, eu ornare leo dui vitae sem. </p>
 		</figure>
 
 		<figure class="col-md-4">
 			<div class="view-profile">
-				<h4>VIEW PROFILE</h4>
+				<img src="images/index/members.jpg" class="img-responsive">
+				<div class="over-lay"><h4>VIEW PROFILE</h4></div>
 			</div>
 			<figcaption class="row text-left">
-				<div class="col-lg-9">JOHN DOE</div>
-				<div class="col-lg-3 position">Founder</div>
+				<div class="col-xs-9 col-lg-9">JOHN DOE</div>
+				<div class="col-xs-3 col-lg-3 position">Founder</div>
 			</figcaption>
 			<p class="text-left">Vestibulum id felis arcu. In suscipit, tortor id accumsan interdum, urna ligula eleifend mi, eu ornare leo dui vitae sem. </p>
 		</figure>
 	</div>
 
-	<div class="clients row">
+	<div class="clients">
 		<p>OUR SUCCESSFUL CLIENTS</p>
 		<h1>SOME AMAZING CLIENTS WE’RE GLAD TO WORK WITH</h1>
 		<p>Morbi eget quam at diam auctor laoreet. Curabitur ut turpis elit. Aliquam hendrerit luctus placerat. Suspendisse ut elementum ipsum, et suscipit est. Quisque congue tempor tortor id posuere. Donec viverra sed felis ut vulputate. Mauris vel fermentum lacus, et volutpat turpis.</p>
@@ -297,55 +300,63 @@
 	<div class="row testimonial">
 		<p>WHAT CLIENTS SAY ABOUT US</p>
 		<h1 class="text-center">HERE’S SOME FEEDBACKS WE GOT FROM CLIENTS</h1>
-		<div class="row">
+		<div class="container">
 			<div class="col-md-3 client">
-				<p>“Quisque id dolor nunc. Sed tortor dui, laoreet a commodo vitae, pellentesque nec sapien. Maecenas in hendrerit est. Fusce eget tortor vestibulum, sodales metus at, lobortis nulla. Duis at mollis lectus.”</p>
-				<figure class="col-md-6">
-					<img src="" alt="100x100" class="img-circle">
-				</figure>
-				<figcaption class="col-md-6">
-					<p>John Joe</p>
-					<h6>Co-founder of Freya</h6>
-				</figcaption>
+				<p class="row">“Quisque id dolor nunc. Sed tortor dui, laoreet a commodo vitae, pellentesque nec sapien. Maecenas in hendrerit est. Fusce eget tortor vestibulum, sodales metus at, lobortis nulla. Duis at mollis lectus.”</p>
+				<div class="row">
+					<figure class="col-xs-6 col-md-6">
+						<img src="" alt="100x100" class="img-circle">
+					</figure>
+					<figcaption class="col-xs-6 col-md-6">
+						<p>John Joe</p>
+						<h6>Co-founder of Freya</h6>
+					</figcaption>
+				</div>
 			</div>
 
 			<div class="col-md-3 client">
-				<p>“Proin convallis congue purus, vel dictum tellus mollis vel. Donec quis tellus vel metus rutrum porttitor. Cras elementum eleifend nisl, sed tincidunt magna ultrices sed.”</p>
-				<figure class="col-md-6">
-					<img src="" alt="100x100" class="img-circle">
-				</figure>
-				<figcaption class="col-md-6">
-					<p>David Doe</p>
-					<h6>Co-founder of Freya</h6>
-				</figcaption>
+				<p class="row">“Proin convallis congue purus, vel dictum tellus mollis vel. Donec quis tellus vel metus rutrum porttitor. Cras elementum eleifend nisl, sed tincidunt magna ultrices sed.”</p>
+				<div class="row">
+					<figure class="col-xs-6 col-md-6">
+						<img src="" alt="100x100" class="img-circle">
+					</figure>
+					<figcaption class="col-xs-6 col-md-6">
+						<p>David Doe</p>
+						<h6>Co-founder of Freya</h6>
+					</figcaption>
+				</div>
 			</div>
 
 			<div class="col-md-3 client">
-				<p>“Integer in lobortis sem. Vivamus nec interdum nisi. Integer porta, enim non elementum viverra, eros massa commodo est, vitae fermentum justo felis vel nibh. Cras at ligula justo.”</p>
-				<figure class="col-md-6">
-					<img src="" alt="100x100" class="img-circle">
-				</figure>
-				<figcaption class="col-md-6">
-					<p>David Doe</p>
-					<h6>Co-founder of Freya</h6>
-				</figcaption>
+				<p class="row">“Integer in lobortis sem. Vivamus nec interdum nisi. Integer porta, enim non elementum viverra, eros massa commodo est, vitae fermentum justo felis vel nibh. Cras at ligula justo.”</p>
+				<div class="row">
+					<figure class="col-xs-6 col-md-6">
+						<img src="" alt="100x100" class="img-circle">
+					</figure>
+					<figcaption class="col-xs-6 col-md-6">
+						<p>David Doe</p>
+						<h6>Co-founder of Freya</h6>
+					</figcaption>
+				</div>
 			</div>
 
 			<div class="col-md-3 client">
-				<p>“Integer in lobortis sem. Vivamus nec interdum nisi. Integer porta, enim non elementum viverra, eros massa commodo est, vitae fermentum justo felis vel nibh. Cras at ligula justo.”</p>
-				<figure class="col-md-6">
-					<img src="" alt="100x100" class="img-circle">
-				</figure>
-				<figcaption class="col-md-6">
-					<p>David Doe</p>
-					<h6>Co-founder of Freya</h6>
-				</figcaption>
+				<p class="row">“Integer in lobortis sem. Vivamus nec interdum nisi. Integer porta, enim non elementum viverra, eros massa commodo est, vitae fermentum justo felis vel nibh. Cras at ligula justo.”</p>
+				<div class="row">
+					<figure class="col-xs-6 col-md-6">
+						<img src="" alt="100x100" class="img-circle">
+					</figure>
+					<figcaption class="col-xs-6 col-md-6">
+						<p>David Doe</p>
+						<h6>Co-founder of Freya</h6>
+					</figcaption>
+				</div>
 			</div>
 
 		</div>
 	</div>
 </section>
-<section class="quote text-center">
+<section class="container-fluid quote text-center">
 	<div class="brown-filter">
 		<h1>ELIJAH IS AN AMAZING RESPONSIVE ONEPAGE WORDPRESS 
 			<br>THEME FOR YOUR BUSINESS</h1>
@@ -353,7 +364,7 @@
 	</div>
 </section>
 <section class="container-fluid" id="portfolio">
-	<div class="heading text-center">
+	<div class="container heading text-center">
 		<div class="title-circle ">
 			<div class="title">PORTFOLIO</div>
 			<div class="circle" id="orange-circle"></div>
@@ -373,14 +384,17 @@
 				</ul>
 			</div>
 
-			<div class="grid container-fluid">
+			<div class="container-fluid grid">
+				<div class="grid-sizer"></div>
 				<figure class="item photography">
 					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<a href="portfolio_single.html">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</a>
 				</figure>
 				<figure class="item photography">
 					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
@@ -541,7 +555,7 @@
 	</div>
 </section>
 <section id="contact">
-	<div class="heading container text-center">
+	<div class="container heading text-center">
 		<div class="title-circle ">
 			<div class="title">CONTACT</div>
 			<div class="circle" id="orange-circle"></div>
@@ -553,26 +567,26 @@
 
 	<div class="container-fluid contact-info">
 		<div class="col-md-4"></div>
-		<form class="col-md-4" role="form">
-			<div class="form-group">
-				<label for="name" class="sr-only">Name</label>
-				<input type="text" name="name" placeholder="Name*" class="form-control">
-			</div>
-			<div class="form-group">
-				<label for="email" class="sr-only">Name</label>
-				<input type="emal" name="email" placeholder="Email*" class="form-control">
-			</div>
-			<div class="form-group">
-				<label for="subject" class="sr-only">Name</label>
-				<input type="text" name="subject" placeholder="Subject" class="form-control">
-			</div>
-			<div class="form-group">
-				<label for="message" class="sr-only">Name</label>
-				<input type="text" name="message" placeholder="Your message" class="form-control">
-			</div>
-			
-			<button class="btn form-control">SEND</button>
-		</form>
+			<form role="form" class="col-md-4">
+				<div class="form-group">
+					<label for="name" class="sr-only">Name</label>
+					<input type="text" name="name" placeholder="Name*" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="email" class="sr-only">Name</label>
+					<input type="emal" name="email" placeholder="Email*" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="subject" class="sr-only">Name</label>
+					<input type="text" name="subject" placeholder="Subject" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="message" class="sr-only">Name</label>
+					<input type="text" name="message" placeholder="Your message" class="form-control">
+				</div>
+				
+				<button class="btn btn-orange form-control">SEND</button>
+			</form>
 	</div>
 </section>
 
@@ -640,33 +654,35 @@
 			</div>
 
 			<hr>
+			<div class="row social">
+				<h4 class="col-xs-12 col-md-2">CONNECT US</h4>
 
-			<ul class="list-inline social">
-				<li><h4>CONNECT US</h4></li>
-				<li><i class="fa fa-facebook-square"></i></li>
-				<li><i class="fa fa-twitter-square"></i></li>
-				<li><i class="fa fa-google-plus-square"></i></li>
-				<li><i class="fa fa-github"></i></li>
-				<li><i class="fa fa-linkedin"></i></li>
-				<li><i class="fa fa-pinterest"></i></li>
-				<li><i class="fa fa-github"></i></li>
-				<li><i class="fa fa-instagram"></i></li>
-				<li><i class="fa fa-flickr"></i></li>
-				<li><i class="fa fa-github"></i></li>
-				<li><i class="fa fa-twitter-square"></i></li>
-				<li><i class="fa fa-vimeo"></i></li>
-				<li><i class="fa fa-youtube"></i></li>
-				<li><i class="fa fa-linkedin"></i></li>
-				<i class="fa fa-rss"></i>
-			</ul>
+				<ul class="col-xs-12 col-md-10 list-inline">
+					<li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
+					<li><a href=""><i class="fa fa-github"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+					<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+					<li><a href=""><i class="fa fa-github"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram"></i></a></li>
+					<li><a href=""><i class="fa fa-flickr"></i></a></li>
+					<li><a href=""><i class="fa fa-github"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+					<li><a href=""><i class="fa fa-vimeo"></i></a></li>
+					<li><a href=""><i class="fa fa-youtube"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+					<li><a href=""><i class="fa fa-rss"></i></a></li>
+				</ul>
+			</div>
 		</div>
 		
 	</div>
 
 	<div class="container-fluid footer">
 		<div class="container">
-			<p class="col-md-10">&copy 2014 Elijah. All Rights Reserved. Designed by phonhay</p>
-			<p class="col-md-2 text-right"><a href="#"><strong>Top </strong><i class="fa fa-angle-up"></i></a></p>
+			<p class="col-xs-10 col-md-10">&copy 2014 Elijah. All Rights Reserved. Designed by phonhay</p>
+			<p class="col-xs-2 col-md-2 text-right"><a href="#"><strong>Top </strong><i class="fa fa-angle-up"></i></a></p>
 		</div>
 	</div>
 </footer>

@@ -43,7 +43,7 @@
 	<nav class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseNav">
-				<span class="glyphicon glyphicon-menu-hamburger"></span>
+				<i class="fa fa-bars"></i>
 			</button>
 			<h1>ELIJAH</h1>
 		</div>
@@ -54,7 +54,7 @@
 				<li><a href="#about">ABOUT</a><div class="separator"></div></li>
 				<li><a href="#team">TEAM</a><div class="separator"></div></li>
 				<li><a href="#services">SERVICES</a><div class="separator"></div></li>
-				<li><a href="#portfolio">PORTFOLIO</a><div class="separator"></div></li>
+				<li><a href="portfolio.html">PORTFOLIO</a><div class="separator"></div></li>
 				<li><a href="#pricing">PRICING</a><div class="separator"></div></li>
 				<li><a href="#contact">CONTACT</a><div class="separator"></div></li>
 				<li><a href="#pages">PAGE</a><div class="separator"></div></li>
@@ -98,13 +98,13 @@
 			<h4>Project Detail</h4>
 
 			<ul class="list-unstyled">
-				<li><span>Customer</span>: John Doe</li>
+				<li><span>Customer</span><span>: John Doe</span></li>
 				<li><span>Category</span>: Web Design</li>
 				<li><span>Skill</span>: Photoshop</li>
 				<li><span>Date Start</span>: March 13, 2014</li>
 				<li><span>Date Finish</span>: March 13, 2014</li>
 				<li><span>Tags</span>: Beach, Graphic, Layout</li>
-				<li><span>Launch Demo</span>: http://example.com</li>
+				<li><span>Launch Demo</span>: <a href="">http://example.com <i class="fa fa-share-square-o fa-1x"></i></a></li>
 			</ul>
 		</figcaption>
 	</div>
@@ -112,7 +112,18 @@
 	
 	<div class="container related-work">
 		<p class="Text-light">YOU MIGHT ALSO LIKE WORKS BELOW</p>
-		<figure class="col-md-3">
+		<figure class="col-sm-3 col-md-3">
+			<a href="portfolio_single.html">
+			<img src="images/portfolio/portfolio_related_work.jpg" class="img-responsive" alt="portfolio">
+			<figcaption>
+				<h4>MAURIS ALIQUET SAPIEN</h4>
+				<div class="separator"></div>
+				<h5>Web Design / Photography</h5>
+			</figcaption>
+			</a>
+		</figure>
+
+		<figure class="col-sm-3 col-md-3">
 			<img src="images/portfolio/portfolio_related_work.jpg" class="img-responsive" alt="portfolio">
 			<figcaption>
 				<h4>MAURIS ALIQUET SAPIEN</h4>
@@ -121,7 +132,7 @@
 			</figcaption>
 		</figure>
 
-		<figure class="col-md-3">
+		<figure class="col-sm-3 col-md-3">
 			<img src="images/portfolio/portfolio_related_work.jpg" class="img-responsive" alt="portfolio">
 			<figcaption>
 				<h4>MAURIS ALIQUET SAPIEN</h4>
@@ -130,16 +141,7 @@
 			</figcaption>
 		</figure>
 
-		<figure class="col-md-3">
-			<img src="images/portfolio/portfolio_related_work.jpg" class="img-responsive" alt="portfolio">
-			<figcaption>
-				<h4>MAURIS ALIQUET SAPIEN</h4>
-				<div class="separator"></div>
-				<h5>Web Design / Photography</h5>
-			</figcaption>
-		</figure>
-
-		<figure class="col-md-3">
+		<figure class="col-sm-3 col-md-3">
 			<img src="images/portfolio/portfolio_related_work.jpg" class="img-responsive" alt="portfolio">
 			<figcaption>
 				<h4>MAURIS ALIQUET SAPIEN</h4>
@@ -152,13 +154,13 @@
 	<p class="Text-light">LEAVE YOUR THOUGHT ON THIS ONE</p>
 	<form class="container comment-form form-group">
 		<div class="row">
-			<div class="col-md-4"><input type="text" class="form-control" name="" placeholder="Name*"></div>
-			<div class="col-md-4"><input type="" class="form-control" name="" placeholder="Email*"></div>
+			<div class="col-md-4"><input type="text" class="form-control" name="" placeholder="Name*" required></div>
+			<div class="col-md-4"><input type="email" class="form-control" name="" placeholder="Email*" required></div>
 			<div class="col-md-4"><input type="text" class="form-control" name="" placeholder="Subject"></div>
-			<div class="col-md-12"><input type="" class="form-control" name="" placeholder="Message*"></div>
+			<div class="col-md-12"><input type="text" class="form-control" name="" placeholder="Message*" required></div>
 		</div>
 		
-		<button class="btn">SUBMIT</button>
+		<button class="btn btn-orange" type="submit">SUBMIT</button>
 	</form>
 </section>
 
@@ -226,33 +228,35 @@
 			</div>
 
 			<hr>
+			<div class="row social">
+				<h4 class="col-xs-12 col-md-2">CONNECT US</h4>
 
-			<ul class="list-inline social">
-				<li><h4>CONNECT US</h4></li>
-				<li><i class="fa fa-facebook-square"></i></li>
-				<li><i class="fa fa-twitter-square"></i></li>
-				<li><i class="fa fa-google-plus-square"></i></li>
-				<li><i class="fa fa-github"></i></li>
-				<li><i class="fa fa-linkedin"></i></li>
-				<li><i class="fa fa-pinterest"></i></li>
-				<li><i class="fa fa-github"></i></li>
-				<li><i class="fa fa-instagram"></i></li>
-				<li><i class="fa fa-flickr"></i></li>
-				<li><i class="fa fa-github"></i></li>
-				<li><i class="fa fa-twitter-square"></i></li>
-				<li><i class="fa fa-vimeo"></i></li>
-				<li><i class="fa fa-youtube"></i></li>
-				<li><i class="fa fa-linkedin"></i></li>
-				<i class="fa fa-rss"></i>
-			</ul>
+				<ul class="col-xs-12 col-md-10 list-inline">
+					<li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
+					<li><a href=""><i class="fa fa-github"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+					<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+					<li><a href=""><i class="fa fa-github"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram"></i></a></li>
+					<li><a href=""><i class="fa fa-flickr"></i></a></li>
+					<li><a href=""><i class="fa fa-github"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+					<li><a href=""><i class="fa fa-vimeo"></i></a></li>
+					<li><a href=""><i class="fa fa-youtube"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+					<li><a href=""><i class="fa fa-rss"></i></a></li>
+				</ul>
+			</div>
 		</div>
 		
 	</div>
 
 	<div class="container-fluid footer">
 		<div class="container">
-			<p class="col-md-10">&copy 2014 Elijah. All Rights Reserved. Designed by phonhay</p>
-			<p class="col-md-2 text-right"><a href="#"><strong>Top </strong><i class="fa fa-angle-up"></i></a></p>
+			<p class="col-xs-10 col-md-10">&copy 2014 Elijah. All Rights Reserved. Designed by phonhay</p>
+			<p class="col-xs-2 col-md-2 text-right"><a href="#"><strong>Top </strong><i class="fa fa-angle-up"></i></a></p>
 		</div>
 	</div>
 </footer>

@@ -2,13 +2,13 @@
 //
 body {
 	margin: 0 auto;
-	color: @elijah-dark;
+	color: @e-dark;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Oswald', sans-serif;
-}
-h2, h3, h4, h5, h6 {
-	font-weight: 300;
+	font-family: @oswald;
+	&:not(h1) {
+		font-weight: 300;
+	}
 }
 h1 {
 	font-weight: 400;
@@ -22,32 +22,45 @@ a {
 	}
 }
 p {
-	font-family: 'Lato', sans-serif;
-	.font-size(16px);
+	font-family: @lato;
 	font-weight: 300;
+	.font-size(16px);
 }
-.btn {
-	.Background(@elijah-orange);
-	.font-size(14px);
-	border-radius: 5px;
-	padding: 5px 20px; 
-	font-family: 'Oswald', sans-serif;
-	border: 1px solid #f9a959;
-	border-bottom: 4px solid #dd8833;
-	margin: 20px 0; 
-	}
+
 .Text-light {
-	color: @elijah-light;
+	color: @e-light;
 	padding: 30px 0;
 	text-align: center;
 }
 .Text-orange {
-	color: @elijah-orange;
+	color: @e-orange;
+	background-color: white;
 }
 .Background(@color) {
 	background-color: @color;
 	color: white;
 }
+.btn-orange {
+	.Background(@e-orange);
+	.font-size(14px);
+	border-radius: 5px;
+	padding: 5px 20px; 
+	font-family: @oswald;
+	border: 1px solid #f9a959;
+	box-shadow: 0 4px #dd8833;
+	margin: 20px 0;
+	a {
+		color: white;
+	}
+	&:hover {
+		a {
+			color: @e-orange;
+		}
+		.Text-orange;
+	}
+}
+// HOME
+//
 .home {
 	background-image: url(../images/index/home.jpg);
 	background-size: cover;
@@ -55,18 +68,21 @@ p {
 	color: white;
 	font-weight: 700;
 	padding: 90px 0;
-	height: 825px;
 	.logo {
 		background-color: #959595;
+		.opacity(0.8);
 		font-size: 100px;
 		padding: 25px;
+		@media only screen and (max-width:768px) {
+			font-size: 6.25rem;
+		}
 	}
 	h1 {
-		font-family: 'Lato', sans-serif;
+		font-family: @lato;
 		line-height: 40px;
-		padding: 70px;
+		padding: 70px 0;
 		span {
-			.Background(@elijah-orange);
+			.Background(@e-orange);
 			padding: 0 5px 0 10px;
 		}
 	}
@@ -77,11 +93,12 @@ p {
 
 nav {
 	padding: 20px 40px;
-	font-family: 'Oswald', sans-serif;
+	font-family: @oswald;
 	font-weight: 400;
 	.navbar-header {
 		h1{
 			.Text-orange;
+			display: inline;
 		}
 	}
 	ul {
@@ -90,7 +107,7 @@ nav {
 				height: 2px;
 				width: 50%;
 				margin: 0 auto;
-				.Background(@elijah-orange);
+				.Background(@e-orange);
 				.opacity(0);
 			}
 			&:focus,&:hover {
@@ -99,7 +116,7 @@ nav {
 				}
 			}
 			a{
-				font-size: 18px;
+				.font-size(18px);
 				&:focus, &:hover {
 					.Text-orange;
 				}
@@ -117,7 +134,6 @@ nav {
 }
 .heading{
 		padding: 160px 0;
-		
 		.title-circle {
 			position: relative;
 			width: 270px;
@@ -126,30 +142,37 @@ nav {
 				width: 175px;
 				height: 175px;
 				border-radius: 50%;
-				}
+			}
 			#orange-circle {
-				.Background(@elijah-orange);
+				.Background(@e-orange);
 				position: absolute;
 				left: 100px;
 			}
 			#dark-circle {
-				.Background(@elijah-dark);
+				.Background(@e-dark);
 			}
 			.title {
-				.font-size(60px);
+				font-size: 60px;
 				.absolute-center();
-				font-family: 'Oswald', sans-serif;
+				font-family: @oswald;
 				z-index: 1;
 				color: white;
 				height: 90px;
+				@media only screen and (max-width:768px) {
+					font-size: 3.25rem;
+					height: 5.625rem;
+				}
 			}
 		}
 		h2 {
 			padding: 30px 0;
-			font-family: 'Lato', sans-serif;
+			font-family: @lato;
 			span {
 				.Text-orange;
 			}
+		}
+		@media only screen and (max-width:768px) {
+			padding: 60px 0;
 		}
 	}
 #about {
@@ -180,9 +203,9 @@ nav {
 			.Text-light;
 		}
 		.progress {
-			.Background(@elijah-dark);
+			.Background(@e-dark);
 			.progress-bar {
-				.Background(@elijah-orange);
+				.Background(@e-orange);
 				padding: 0px 20px;
 				display: -webkit-flex;
 				-webkit-align-items: center;
@@ -212,21 +235,22 @@ nav {
 .quote {
 	background-image: url(../images/index/quote.jpg);
 	background-position: center;
+	background-size: cover;
 	i, h6 {
-		.Text-orange;
+		color: @e-orange;
 	}
 	h1 {
 		padding: 40px 0;
 		font-weight: 300;
 		span{
-			.Text-orange;
+			color: @e-orange;
 		}
 	}
 	h6 {
 		padding: 15px;
 	}
 	button {
-		.Background(@elijah-orange);
+		.Background(@e-orange);
 		.font-size(24px);
 		padding: 0 15px;
 		i{
@@ -236,7 +260,7 @@ nav {
 	
 }
 .brown-filter {
-	.Background(@elijah-brown);
+	.Background(@e-brown);
 	.opacity(0.7);
 	padding: 80px 0;
 }
@@ -244,32 +268,42 @@ nav {
 	.members {
 		figure {
 			.view-profile {
-				background-image: url(../images/index/members.jpg);
-				background-size: cover;
-				padding: 90px 0;
-				h4{
-					padding: 15px 0;
-					font-weight: 700;
-					.Background(@elijah-dark);
+				position: relative;
+				img {
+					width: 100%;
+				}
+				.over-lay {
+					.absolute-center();
+					.Background(@e-orange);
+					display:-webkit-flex;
+					-webkit-align-items: center;
+					h4{
+						padding: 15px 0;
+						font-weight: 700;
+						width: 100%;
+						.Background(@e-dark);
+					}
 					.opacity(0);
 				}
+	
 				&:hover {
-					h4 {
-						.opacity(0.6);
+					.over-lay{
+						.opacity(0.6);	
 					}
+					
 				}
 			}
 			figcaption {
-				font-family: 'Oswald', sans-serif;
+				font-family: @oswald;
 				font-weight: 400;
 				padding: 20px;
 				.position {
 					.font-size(14px);
-					color: @elijah-lightest;
+					color: @e-lightest;
 				}
 			}
 			p{
-				color: @elijah-lightest;
+				color: @e-lightest;
 			}
 		}
 	}
@@ -294,8 +328,7 @@ nav {
 }
 .twitter {
 	.item {
-		background-image: url(.../images/index/twitter.jpg);
-		height: 500px;
+		height: 552px;
 		.brown-filter;
 	}
 }
@@ -318,7 +351,7 @@ nav {
 		}
 	}
 	.testimonial {
-		font-family: 'Open Sans', sans-serif;
+		font-family: @opensans;
 		&>p {
 			.Text-light;
 		}
@@ -327,6 +360,9 @@ nav {
 			&>p {
 				font-style: Italic;
 				padding: 70px 0;
+				@media only screen and (max-width:768px) {
+					padding:30px 0;
+				}
 			}
 			figure {
 				padding: 0;
@@ -334,8 +370,8 @@ nav {
 					width: 100px;
 					height: 100px;
 					&[alt]{
-						.Background(@elijah-light);					}
-
+						.Background(@e-light);
+					}
 				}
 			}
 			figcaption {
@@ -350,6 +386,9 @@ nav {
 				}
 			}
 			padding-bottom: 100px;
+			@media only screen and (max-width:768px) {
+				padding-bottom: 30px;
+			}
 		}
 	}
 }
@@ -359,31 +398,35 @@ nav {
 		margin: 70px 0;
 		ul {
 			li {
-				.Background(@elijah-orange);
+				.Background(@e-orange);
 				.font-size(24px);
 				padding: 0px 30px;
 				margin: 0 10px 40px 10px;
-				border-color: @elijah-orange;
+				border-color: @e-orange;
 				border-radius: 20px;
 				&:hover {
 					.Background(white);
 					.Text-orange;
-					border-color: @elijah-orange;
+					border-color: @e-orange;
 					cursor: pointer;
 				}
 			}
 		}
 		.grid {
-			max-width: 1600px;
-			figure { 
+
+			.item-sizer, .item {
+				width: 25%;
+				}
+			.item { 
 				display: inline-block;
 				position: relative;
-				width: 400px;
-				height: 268px;
+				img {
+					width: 100%;
+				}
 				figcaption {
-					.Background(@elijah-orange);
+					.Background(@e-orange);
 					.absolute-center();
-					padding: 100px 0;
+					padding: 25% 0;
 					.separator {
 						height: 2px;
 						width: 30%;
@@ -402,11 +445,10 @@ nav {
 	.rating {
 		padding: 30px 0;
 		&:not(i:last-child) {
-			color: @elijah-orange;
+			color: @e-orange;
 		}
 	}
 	.portfolio_container {
-
 		figcaption {
 			p {
 				padding: 30px 0;
@@ -416,35 +458,52 @@ nav {
 				margin: 0;
 				li {
 					padding-top: 10px 0;
+					clear: both;
 					span {
 						&:first-child {
 							width: 110px;
-							fload: left;
+							float: left;
 							overflow: hidden;
 							white-space: nowrap;
 							&:after {
-								content:"                                                          ";
+								content:"                    ";
 							}
 						}
 						&:last-child {
 							float: left;
 						}
 					}
+					a {
+						.Text-orange;
+						border-bottom: 1px dotted @e-orange;
+					}
 				}
 			}
 		}
-
 	}
 	
 	.related-work {
 		figure {
 			position: relative;
+			image {
+				.absolute-center();
+			}
 			figcaption {
-				.Background(@elijah-orange);
+				.Background(@e-orange);
 				.absolute-center();
 				max-width: 270px;
 				text-align: center;
-				padding: 70px 0;				
+				padding: 20% 0;
+				.opacity(0);
+				.separator {
+						height: 2px;
+						width: 30%;
+						margin: 10px auto;
+						background-color: white;
+					}
+				&:hover	{
+					.opacity(1);
+				}
 			}
 		}
 	}
@@ -454,9 +513,8 @@ nav {
 				margin: 10px 0;
 				padding: 20px 20px;
 				border-radius: 0;
-				&[placeholder] {
-					color: @elijah-orange;
-				}
+				border-color: @e-light;
+				.placeholder(@e-orange);
 			}
 			button {
 				float: right;
@@ -472,7 +530,7 @@ nav {
 			text-align: center;
 			display: inline-block;
 			padding: 35px;
-			.Background(@elijah-dark);
+			.Background(@e-dark);
 			.font-size(48px);
 			margin: 40px 0;
 		}
@@ -483,26 +541,26 @@ nav {
 			margin: 40px 0;
 			padding: 10px 20px;
 			font-weight: 400;
-			.Background(@elijah-dark);
+			.Background(@e-dark);
 		}
 		margin: 0;
 		&:hover {
-			border-color: @elijah-yellow;
+			border-color: @e-yellow;
 			li {
 				.Background(#fff0a8);
-				color: @elijah-dark;
+				color: @e-dark;
 				
 				&:first-child, &:last-child {
-					.Background(@elijah-yellow);
+					.Background(@e-yellow);
 					.pricing-circle {
-						.Background(white);
-						color: @elijah-yellow;
+						background-color: white;
+						color: @e-yellow;
 						margin: 40px 0;
 					}
 					.opacity(0.8);
 					button {
-						.Background(white);
-						color: @elijah-yellow;
+						background-color: white;
+						color: @e-yellow;
 					}
 				}
 			}
@@ -510,7 +568,7 @@ nav {
 	}
 }
 .company-information {
-	font-family: 'Oswald', sans-serif;
+	font-family: @oswald;
 	margin-top: 100px;
 	.keep-in-touch {
 		.font-size(60px);
@@ -519,12 +577,13 @@ nav {
 	.address {
 		.font-size(48px);
 		font-weight: 300;
-		padding: 20px 0 50px 0;
+		padding: 20px 0;
 	}
 	h2 {
 		.Background(black);
 		padding: 5px 30px;
 		display: inline;
+		margin: 15px 0;
 	}
 }
 #contact {
@@ -532,19 +591,10 @@ nav {
 		background-image: url(../images/index/contact.jpg);
 		background-size: cover;
 		background-position: center;
-		background-color: black;
 		padding: 140px 0;
-		margin: 0 auto;
 		form {
 			padding: 70px;
 			background-color: white;
-			button {
-				.Background(@elijah-orange);
-				border-color: @elijah-orange;
-				&:hover {
-					.Background(white);
-					.Text-orange;				}
-			}
 		}
 	}
 }
@@ -553,22 +603,21 @@ nav {
 	h3,p {
 		color: black;
 	}
-
 	.blog-main {
 		figcaption {
 			padding: 40px 40px 70px 40px;
 			ul {
 				padding-top: 30px;
-				color: @elijah-light;
+				color: @e-light;
 				li {
 					padding-right: 20px;
 				}
 			}
 			blockquote {
-				border-color: #abcdc0;
+				border-color: @e-blockquote-border;
 				margin-left: 20px;
 				p{
-					color: @elijah-light;
+					color: @e-light;
 					font-style: normal;
 				}
 			}
@@ -576,7 +625,7 @@ nav {
 				margin-top: 35px;
 			}
 			.prev {
-				color: @elijah-light;
+				color: @e-light;
 			}
 		}
 
@@ -586,15 +635,15 @@ nav {
 				padding: 0;
 				i {
 					float: right;
-					color: @elijah-light;
+					color: @e-light;
 					margin: 0 5px;
 				}
 				p{
-					font-family:'Oswald', sans-serif;
+					font-family:@oswald;
 					font-weight: 400;
 				}
 				.report-reply, a {
-					color: @elijah-light;
+					color: @e-light;
 				}
 			}
 		}
@@ -606,21 +655,17 @@ nav {
 		.comment-form {
 			padding-bottom: 150px;
 			.form-control {
-				background-color: #e4f4ee;
 				margin: 20px 0;
 				padding: 20px 20px;
-				border: none;
-				border-top: #dae9e4;
-			&[placeholder] {
-					color: #a8baa9;
-				}
+				.Background(@e-form-background);
+				.bordered(@e-form-border,@e-form-background,@e-form-background,@e-form-background);
+				.placeholder(@e-placeholder-blog);
 			}
 		}
 		.pager {
 			li a{
-				.Background(@elijah-orange);
+				.btn-orange;
 				.font-size(14px);
-				.btn();
 				padding: 5px 30px; 
 				margin-bottom: 100px;
 			}
@@ -653,7 +698,7 @@ nav {
 			input {
 				margin: 20px 0;
 				border: none;
-				border-bottom: 2px solid @elijah-light;
+				border-bottom: 2px solid @e-light;
 			}
 		}
 		.heading {
@@ -661,14 +706,14 @@ nav {
 			border-bottom: 1px solid black;
 			padding: 10px;
 			margin: 40px 0;
-			font-family: 'Oswald', sans-serif;
+			font-family: @oswald;
 		}
 		.sidebar-content {
 			padding: 10px 0;
 			p {
 				span {
 					.font-size(14px);
-					color: @elijah-light;
+					color: @e-light;
 				}
 			}
 		}
@@ -684,7 +729,7 @@ nav {
 								overflow: hidden;
 								white-space: nowrap;
 								&:after {
-									content:" ......................................................................";
+									content:" ................................................................";
 								}
 							}
 							&:last-child {
@@ -702,11 +747,11 @@ nav {
 			li {
 				padding: 5px 10px;
 				margin: 5px;
-				border: 1px solid @elijah-light;
+				border: 1px solid @e-light;
 				a {
-					color: @elijah-lightest;
+					color: @e-light;
 					&:hover {
-						color: @elijah-orange;
+						.Text-orange;
 					}
 				}
 			}

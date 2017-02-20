@@ -14,8 +14,14 @@ $('.iso-nav ul li').click(function(){
 
 	var selector = $(this).attr('data-filter');
 	$('.grid').isotope({
-		filter:selector
+		filter:selector,
+		itemSelector: '.item',
+		percentPosition: true,
+		masonry: {
+		columnWidth: '.grid-sizer'
+		}
 	});
 	return false;
 });
+
 
