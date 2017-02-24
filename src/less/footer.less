@@ -16,15 +16,22 @@ footer {
 					img {
 						width: 70px;
 						height: 70px;
-						margin: 7px;
 						float: left;
+						margin: 8px 5px 5px 10px;
 						display: inline-block;
 					}
 					figcaption {
+						p{
+							color: #a9a9a9;
+							&:hover {
+								color: @e-orange;
+							}
+						}
 						h6 {
 							color: #6e6e6e;
 							font-family: 'Lato', sans-serif;
 							display: inline-block;
+							font-size: 12px;
 						}
 					}
 				}
@@ -35,12 +42,21 @@ footer {
 						background-color: black;
 						padding: 5px 15px;
 						margin: 5px;
+						&:hover,&:active {
+							background-color: white;
+							a {
+								color: @e-orange-dark;
+							}
+							
+						}
 					}
 				}
 			}
 			.flickr-galary {
 				img {
 					margin: 0 4px 8px 0;
+					width: 80px;
+					height: 80px;
 				}
 			}
 		}
@@ -54,7 +70,7 @@ footer {
 			li {
 				padding-left: 40px;
 				text-align: right;
-				&:hover {
+				&:hover, &:active {
 					a {
 						color: white;
 					}

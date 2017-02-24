@@ -37,31 +37,33 @@
 	<section class="container-fluid text-center home">
 		<div class="logo">ELIJAH</div>
 		<h1>WE’RE ELIJAH. WE CREATE <span>AMAZING</span><br> WORDPRESS THEMES</h1>
-		<i class="fa fa-angle-down fa-3x"></i>
+		<a href="index.html#about"><i class="fa fa-angle-down fa-3x"></i></a>
 	</section>	
-	
-	<nav class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseNav">
-				<i class="fa fa-bars"></i>
-			</button>
-			<h1>ELIJAH</h1>
-		</div>
+	<div class="menu">
+		<nav class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseNav">
+					<i class="fa fa-bars"></i>
+				</button>
+				<h1><a href="index.html">ELIJAH</a></h1>
+			</div>
 
-		<div class="collapse navbar-collapse" id="collapseNav">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="index.html">HOME</a><div class="separator"></div></li>
-				<li><a href="#about">ABOUT</a><div class="separator"></div></li>
-				<li><a href="#team">TEAM</a><div class="separator"></div></li>
-				<li><a href="#services">SERVICES</a><div class="separator"></div></li>
-				<li><a href="portfolio.html">PORTFOLIO</a><div class="separator"></div></li>
-				<li><a href="#pricing">PRICING</a><div class="separator"></div></li>
-				<li><a href="#contact">CONTACT</a><div class="separator"></div></li>
-				<li><a href="#pages">PAGE</a><div class="separator"></div></li>
-				<li><a href="blog.html">BLOG</a><div class="separator"></div></li>
-			</ul>
-		</div>
-	</nav>
+			<div class="collapse navbar-collapse" id="collapseNav">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="index.html">HOME</a><div class="separator"></div></li>
+					<li><a href="index.html#about">ABOUT</a><div class="separator"></div></li>
+					<li><a href="index.html#team">TEAM</a><div class="separator"></div></li>
+					<li><a href="index.html#services">SERVICES</a><div class="separator"></div></li>
+					<li><a href="portfolio.html">PORTFOLIO</a><div class="separator"></div></li>
+					<li><a href="index.html#pricing">PRICING</a><div class="separator"></div></li>
+					<li><a href="index.html#contact">CONTACT</a><div class="separator"></div></li>
+					<li><a href="index.html#pages">PAGE</a><div class="separator"></div></li>
+					<li><a href="blog.html">BLOG</a><div class="separator"></div></li>
+					<li><a href=""><i class="fa fa-search"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 </header>
 <!-- END | Header -->
 
@@ -72,7 +74,7 @@
 		<div class="circle" id="orange-circle"></div>
 		<div class="circle" id="dark-circle"></div>
 	</div>
-	<h2>Suspendisse potenti. Integer placerat eget velit vel gravida. Ut egestas <br> fringilla lutpat elementum ligula sed diam.</h2>
+	<h2>Suspendisse potenti. Integer placerat eget velit vel gravida. Ut egestas fringilla lutpat elementum ligula sed diam.</h2>
 </div>
 	<div class="container blog">
 		<main class=" blog-main col-md-8">
@@ -83,8 +85,8 @@
 					<ul class="list-inline">
 						<li><i class="fa fa-user"></i> Mark Hain</li>
 						<li><i class="fa fa-calendar"></i> March 4, 2014</li>
-						<li><i class="fa fa-comment"></i> 7 Comments</li>
-						<li><i class="fa fa-share"></i> Share</li>
+						<li><i class="fa fa-comments"></i> 7 Comments</li>
+						<li><i class="fa fa-share-square-o"></i> Share</li>
 					</ul>
 					<p>Sed sed orci ut risus semper adipiscing a non sem. Sed rutrum et risus non congue. Morbi sed eros felis. Nulla lacinia vel est eget cursus. Ut eu bibendum eros, ut venenatis massa. Nulla aliquam erat vitae orci tristique ornare. Nam condimentum, leo eget vulputate laoreet, tortor enim interdum dolor, vel sagittis nibh nisl nec lorem. Vestibulum ultrices eleifend massa at rutrum.</p>
 
@@ -100,13 +102,13 @@
 							<p>Nunc nec urna placerat, congue erat laoreet, laoreet arcu. Morbi malesuada vestibulum nulla, eget aliquet odio scelerisque sed. Donec ac venenatis massa. Curabitur ac convallis quam. Pellentesque facilisis pulvinar venenatis. Mauris eget facilisis ligula, sed aliquam mi. Duis vehicula velit nec vestibulum aliquam. Aliquam at dui id dui accumsan posuere id non libero. Sed blandit varius lacus, eget scelerisque eros egestas.</p>
 							<div class="row prev-next text-center">
 								<div class="col-md-6 prev">
-									<p class="prev">PREVIOUS POST</p>
-									<span>Aliquam at dui id dui accumsan posuere id non</span>
+									<p>PREVIOUS POST</p>
+									<span><a href="">Aliquam at dui id dui accumsan posuere id non</a></span>
 								</div>
 
-								<div class="col-md-6">
+								<div class="col-md-6 next">
 									<p>NEXT POST</p>
-									<span>Praesent vitae condimentum lorem, non sollicitudin nisi</span>
+									<span><a href="">Praesent vitae condimentum lorem, non sollicitudin nisi</a></span>
 								</div>
 							</div>
 						</figcaption>
@@ -219,7 +221,7 @@
 							<div class="col-md-7"><input type="text" class="form-control" name="name" placeholder="Name*"></div>
 							<div class="col-md-7"><input type="text" class="form-control" name="mail" placeholder="Email*"></div>
 							<div class="col-md-7"><input type="text" class="form-control" name="subject" placeholder="Subject"></div>
-							<div class="col-md-10"><textarea class="form-control" name="subject" placeholder="Message" rows="10"></textarea></div>
+							<div class="col-md-10"><textarea class="form-control" name="subject" placeholder="Message" rows="8"></textarea></div>
 						</div>
 						<button class="btn btn-orange">SUBMIT</button>
 					</form>
@@ -260,46 +262,46 @@
 			<div class="container-fluid categories">
 				<p class="text-center heading">CATEGORIES</p>
 				<ul class="list-unstyled">
-					<li><span>Web Design</span> <span>10</span></li>
-					<li><span>Life Story</span> <span>23</span></li>
-					<li><span>Graphic Design</span> <span>06</span></li>
-					<li><span>Photography</span> <span>13</span></li>
-					<li><span>Web Development</span> <span>14</span></li>
-					<li><span>Miscellaneous</span> <span>31</span></li>
+					<li><a href=""><span>Web Design</span> <span>10</span></a></li>
+					<li><a href=""><span>Life Story</span> <span>23</span></a></li>
+					<li><a href=""><span>Graphic Design</span> <span>06</span></a></li>
+					<li><a href=""><span>Photography</span> <span>13</span></a></li>
+					<li><a href=""><span>Web Development</span> <span>14</span></a></li>
+					<li><a href=""><span>Miscellaneous</span> <span>31</span></a></li>
 				</ul>
 			</div>
 
 			<div class="post">
 				<p class="text-center heading">POPULAR POST</p>
 				<div class="sidebar-content">
-					<p>Sed rutrum et risus non congue  <span>Mar 02, 2014</span></p>
-					<p>Vestibulum volutpat faucibus mauris ut facilisis dolor amet <span>Feb 28, 2014</span></p>
-					<p>Eros ac nisl dignissim accumsan ut a sem tellus ligula congue <span>Feb 26, 2014</span></p>
-					<p>Posuere ligula nulla non tellus <span>Feb 22, 2014</span></p>
-					<p>Sed rutrum et risus non congue <span>Feb 22, 2014</span></p>
+					<p><a href="">Sed rutrum et risus non congue  <span>Mar 02, 2014</span></a></p>
+					<p><a href="">Vestibulum volutpat faucibus mauris ut facilisis dolor amet <span>Feb 28, 2014</span></a></p>
+					<p><a href="">Eros ac nisl dignissim accumsan ut a sem tellus ligula congue <span>Feb 26, 2014</span></a></p>
+					<p><a href="">Posuere ligula nulla non tellus <span>Feb 22, 2014</span></a></p>
+					<p><a href="">Sed rutrum et risus non congue <span>Feb 22, 2014</span></a></p>
 				</div>
 				
 			</div>
 
-			<div class="">
+			<div>
 				<p class="text-center heading">RECENT COMMENTS</p>
 				<div class="sidebar-content">
-					<p>Mark Hain <span>on</span> Sed rutrum et risus non congue</p>
-					<p>Jane Everett <span>on</span> Jane Everett</p>
-					<p>John Doe <span>on</span> Eros ac nisl dignissim accumsan ut a sem risus mauris lulla</p>
-					<p>Mark Hain <span>on</span> Eros ac nisl dignissim accumsan ut a sem risus mauris lulla</p>
-					<p>Jane Everett <span>on</span> Jane Everett</p>
+					<p><a href="">Mark Hain <span>on</span> Sed rutrum et risus non congue</a></p>
+					<p><a href="">Jane Everett <span>on</span> Faucibus mauris ut facilisis</a></p>
+					<p><a href="">John Doe <span>on</span> Eros ac nisl dignissim accumsan ut a sem risus mauris lulla</a></p>
+					<p><a href="">Mark Hain <span>on</span> Eros ac nisl dignissim accumsan ut a sem risus mauris lulla</a></p>
+					<p><a href="">Jane Everett <span>on</span> Posuere ligula nulla non tellus</a></p>
 				</div>
 			</div>
 
-			<div>
+			<div class="video">
 				<p class="text-center heading">VIDEO WIDGET</p>
-				<img src="images/blog/blog_sidebar_widget.jpg" alt="Video Widget">
+				<iframe width="100%" height="155" src="https://www.youtube.com/embed/zDc9RDcMsbQ"></iframe>
 			</div>
 
-			<div>
+			<div class="tags">
 				<p class="text-center heading">TAGS</p>
-				<ul class="list-inline tags">
+				<ul class="list-inline">
 					<li><a href="">Everett</a></li>
 					<li><a href="">modern design</a></li>
 					<li><a href="">minimalist</a></li>
@@ -317,12 +319,18 @@
 
 			<div class="container-fluid advertisement">
 				<p class="text-center heading">ADVERTISEMENT</p>
-				<img src="images/blog/blog_sidebar_adlg.jpg" alt="Advertisement">
-				<img src="images/blog/blog_sidebar_ads.jpg" alt="Advertisement">
-				<img src="images/blog/blog_sidebar_ads.jpg" alt="Advertisement">
-				<img src="images/blog/blog_sidebar_ads.jpg" alt="Advertisement">
-				<img src="images/blog/blog_sidebar_adm.jpg" alt="Advertisement">
-				<img src="images/blog/blog_sidebar_adm.jpg" alt="Advertisement">
+				<div class="row">
+					<div class="col-md-12"><a href=""><img src="images/blog/blog_sidebar_adlg.jpg" alt="Advertisement"></a></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-4 col-sm-4 col-md-4"><a href=""><img src="images/blog/blog_sidebar_ads.jpg" alt="Advertisement"></a></div>
+					<div class="col-xs-4 col-sm-4 col-md-4"><a href=""><img src="images/blog/blog_sidebar_ads.jpg" alt="Advertisement"></a></div>
+					<div class="col-xs-4 col-sm-4 col-md-4"><a href=""><img src="images/blog/blog_sidebar_ads.jpg" alt="Advertisement"></a></div>
+				</div>
+				<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6"><a href=""><img src="images/blog/blog_sidebar_adm.jpg" alt="Advertisement"></a></div>
+				<div class="col-xs-6 col-md-6"><a href=""><img src="images/blog/blog_sidebar_adm.jpg" alt="Advertisement"></a></div>
+				</div>
 			</div>
 
 	</div>
@@ -338,30 +346,40 @@
 					<p>Curabitur molestie molestie velit, et porta velit gravida eget. Sed fermentum, orci nec.</p>
 					<p>Ullamcorper accumsan, mauris leo malesuada metus, a iaculis turpis ligula at odio. Praesent consectetur pulvinar velit ut condimentum. Nullam fermentum tristique metus, in venenatis enim euismod sed.</p>
 				</div>
+	<!--Recent posts-->	
+
 				<div class="col-md-3 recent-post">
 					<h4>RECENT POSTS</h4>
 					<figure class="row">
-						<img src="images/index/footer.jpg" alt="recent-post">
-						<figcaption>
-							<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
-							<h6>March 12, 2014</h6>
-						</figcaption>
+						<a href="">
+							<img src="images/index/footer.jpg" alt="recent-post">
+							<figcaption>
+								<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
+								<h6>March 12, 2014</h6>
+							</figcaption>
+						</a>
 					</figure>
 					<figure class="row">
-						<img src="images/index/footer.jpg" alt="recent-post">
-						<figcaption>
-							<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
-							<h6>March 12, 2014</h6>
-						</figcaption>
+						<a href="">
+							<img src="images/index/footer.jpg" alt="recent-post">
+							<figcaption>
+								<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
+								<h6>March 12, 2014</h6>
+							</figcaption>
+						</a>
 					</figure>
 					<figure class="row">
-						<img src="images/index/footer.jpg" alt="recent-post">
-						<figcaption>
-							<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
-							<h6>March 12, 2014</h6>
-						</figcaption>
+						<a href="">
+							<img src="images/index/footer.jpg" alt="recent-post">
+							<figcaption>
+								<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
+								<h6>March 12, 2014</h6>
+							</figcaption>
+						</a>
 					</figure>
 				</div>
+	<!--Tags-->	
+
 				<div class="col-md-3 tags">
 					<h4>TAGS</h4>
 					<ul class="list-inline">
@@ -387,9 +405,11 @@
 						<a href=""><img src="images/index/footer-flickr.jpg" alt="flickr"></a>
 						<a href=""><img src="images/index/footer-flickr.jpg" alt="flickr"></a>
 						<a href=""><img src="images/index/footer-flickr.jpg" alt="flickr"></a>
+						<a href=""><img src="images/index/footer-flickr.jpg" alt="flickr"></a>
 					</figure>
 				</div>
 			</div>
+	<!--Connect us-->	
 
 			<hr>
 			<div class="row social">

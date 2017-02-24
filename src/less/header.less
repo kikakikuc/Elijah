@@ -1,2 +1,86 @@
 // HEADER
 // 
+.home {
+	background-image: url(../images/index/home.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	font-weight: 700;
+	padding: 90px 0;
+	.logo {
+		background-color: #959595;
+		.opacity(0.8);
+		.font-size-logo;
+		padding: 25px;
+		
+	}
+	h1 {
+		font-family: @lato;
+		line-height: 40px;
+		padding: 70px 0;
+		span {
+			.Background(@e-orange);
+			padding: 0 5px 0 10px;
+		}
+	}
+	a {
+		i {
+			padding: 90px;
+		}
+		&:hover {
+			color: @e-orange;
+		}
+
+	}
+}
+.menu {
+
+		background-color: white;
+	}
+nav {
+	padding: 20px 40px;
+	font-family: @oswald;
+	.navbar-header {
+		h1 {
+			display: inline;
+			a{
+				.Text-orange;
+				font-weight: 400;
+			}
+		} 
+	}
+	#collapseNav {
+		padding: 0;
+	}
+	ul {
+		li {
+			.separator {
+				height: 2px;
+				width: 50%;
+				margin: 0 auto;
+				.Background(@e-orange);
+				.opacity(0);
+			}
+			a{
+				font-size: 18px;
+			}
+			&:focus,&:hover {
+				.separator {
+					.opacity(1);
+				}
+				a {
+					.Text-orange;
+				}
+			}
+			
+		}
+		.active {
+			a {
+				.Text-orange;
+			}
+			.separator {
+				.opacity(1);
+			}
+		}
+	}
+}

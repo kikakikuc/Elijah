@@ -37,31 +37,33 @@
 	<section class="container-fluid text-center home">
 		<div class="logo">ELIJAH</div>
 		<h1>WE’RE ELIJAH. WE CREATE <span>AMAZING</span><br> WORDPRESS THEMES</h1>
-		<i class="fa fa-angle-down fa-3x"></i>
+		<a href="index.html#about"><i class="fa fa-angle-down fa-3x"></i></a>
 	</section>	
-	
-	<nav class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseNav">
-				<i class="fa fa-bars"></i>
-			</button>
-			<h1>ELIJAH</h1>
-		</div>
+	<div class="menu">
+		<nav class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseNav">
+					<i class="fa fa-bars"></i>
+				</button>
+				<h1><a href="index.html">ELIJAH</a></h1>
+			</div>
 
-		<div class="collapse navbar-collapse" id="collapseNav">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="index.html">HOME</a><div class="separator"></div></li>
-				<li><a href="#about">ABOUT</a><div class="separator"></div></li>
-				<li><a href="#team">TEAM</a><div class="separator"></div></li>
-				<li><a href="#services">SERVICES</a><div class="separator"></div></li>
-				<li><a href="portfolio.html">PORTFOLIO</a><div class="separator"></div></li>
-				<li><a href="#pricing">PRICING</a><div class="separator"></div></li>
-				<li><a href="#contact">CONTACT</a><div class="separator"></div></li>
-				<li><a href="#pages">PAGE</a><div class="separator"></div></li>
-				<li><a href="blog.html">BLOG</a><div class="separator"></div></li>
-			</ul>
-		</div>
-	</nav>
+			<div class="collapse navbar-collapse" id="collapseNav">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="index.html">HOME</a><div class="separator"></div></li>
+					<li><a href="index.html#about">ABOUT</a><div class="separator"></div></li>
+					<li><a href="index.html#team">TEAM</a><div class="separator"></div></li>
+					<li><a href="index.html#services">SERVICES</a><div class="separator"></div></li>
+					<li><a href="portfolio.html">PORTFOLIO</a><div class="separator"></div></li>
+					<li><a href="index.html#pricing">PRICING</a><div class="separator"></div></li>
+					<li><a href="index.html#contact">CONTACT</a><div class="separator"></div></li>
+					<li><a href="index.html#pages">PAGE</a><div class="separator"></div></li>
+					<li><a href="blog.html">BLOG</a><div class="separator"></div></li>
+					<li><a href=""><i class="fa fa-search"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 </header>
 <!-- END | Header -->
 
@@ -74,7 +76,7 @@
 			<div class="circle" id="dark-circle"></div>
 		</div>
 
-		<h2>Suspendisse potenti. Integer placerat eget velit vel gravida. Ut egestas <br> fringilla lutpat elementum ligula sed diam.</h2>
+		<h2>Suspendisse potenti. Integer placerat eget velit vel gravida. Ut egestas fringilla lutpat elementum ligula sed diam.</h2>
 	</div>
 	<div class="row feature text-center">
 		<article class="col-lg-4 col-md-4">
@@ -115,7 +117,7 @@
 
 		<div class="col-lg-6 col-md-6 skill">
 			<div class="progress">
-				<div class="progress-bar text-left" role="progress-bar" aria-valuenow="90" aria-valuemin="0" ariav-valuemax="100" style="width: 90%">HTML/CSS<span>90%</span></div>
+				<div class="progress-bar text-left" role="progress-bar" aria-valuenow="90" aria-valuemin="0" ariav-valuemax="100" style="width: 90%">HTML / CSS<span>90%</span></div>
 			</div>
 			<div class="progress">
 				<div class="progress-bar text-left" role="progress-bar" aria-valuenow="85" aria-valuemin="0" ariav-valuemax="100" style="width: 85%">Graphic Design<span>85%</span></div>
@@ -132,35 +134,38 @@
 	<div class="row fun-fact text-center">
 		<p>WHAT WE GOT HERE</p>
 		<h1>HERE’S SOME INTERESTING NUMBERS ABOUT US</h1>
+		
 		<article class="col-md-3">
-			<div class="number">386</div>
+			<h2 class="counter" data-count="386">0</h2>
 			<h3>PROJECTS COMPLETED</h3>
 			<p>Proin eu justo non est consequat ultrices. Nullam fringilla facilisis odio et pretium.</p>
 		</article>
 		<article class="col-md-3">
-			<div class="number">291</div>
+			<h2 class="counter" data-count="291">0</h2>
 			<h3>CLIENTS SERVED</h3>
 			<p>Proin eu justo non est consequat ultrices. Nullam fringilla facilisis odio et pretium.</p>
 		</article>
 		<article class="col-md-3">
-			<div class="number">2925</div>
+			<h2 class="counter" data-count="2925">0</h2>
 			<h3>SONGS PLAYED</h3>
 			<p>Proin eu justo non est consequat ultrices. Nullam fringilla facilisis odio et pretium.</p>
 		</article>
 		<article class="col-md-3">
-			<div class="number">6740</div>
+			<h2 class="counter" data-count="6740">0</h2>
 			<h3>COFFEE CUPS</h3>
 			<p>Proin eu justo non est consequat ultrices. Nullam fringilla facilisis odio et pretium.</p>
 		</article>
 		
 	</div>
 </section>
-<section class="container-fluid quote text-center">
-	<div class="brown-filter">
-		<i class="fa fa-quote-left"></i>
-		<h1>PELLENTESQUE MALESUADA NUNC ET NISI RHONCUS RUTRUM.<br> CUM SOCIIS NATOQUE PENATIBUS <br>MAGNIS PARTURIENT MONTES</h1>
-		<h3>_ Mark Hain</h3>
-	</div>
+<section class="container-fluid quote">
+		<img src="images/index/quote.jpg" width="100%">
+		
+		<div class="overlay">
+			<i class="fa fa-quote-left fa-2x"></i>
+			<h1>PELLENTESQUE MALESUADA NUNC ET NISI RHONCUS RUTRUM.<br> CUM SOCIIS NATOQUE PENATIBUS <br>MAGNIS PARTURIENT MONTES</h1>
+			<h3>_ Mark Hain</h3>
+		</div>
 </section>
 <section class="container text-center" id="team">
 	<div class="container heading">
@@ -240,24 +245,33 @@
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>
 
-		<div class="carousel-inner quote text-center" role="listbox">
+		<div class="carousel-inner" role="listbox">
 			<figure class="item active">
-				<i class="fa fa-twitter fa-2x"></i>
-				<h1>fringilla @<span>elijah</span>, nec venenatis sem posuere <br>quis. Sed sed faucibus ligula.</h1>
-				<h3>_ Mark Hain</h3>
-				<h6>about 1 hour ago</h6>
+				<img src="images/index/twitter.jpg" width="100%">
+				<div class="overlay">
+					<i class="fa fa-twitter fa-2x"></i>
+					<h1>fringilla @<span>elijah</span>, nec venenatis sem posuere <br>quis. Sed sed faucibus ligula.</h1>
+					<h3>_ Mark Hain</h3>
+					<h6>about 1 hour ago</h6>
+				</div>
 			</figure>
 			<figure class="item">
-				<i class="fa fa-twitter fa-2x"></i>
-				<h1>fringilla @<span>elijah</span>, nec venenatis sem posuere <br>quis. Sed sed faucibus ligula.</h1>
-				<h3>_ Mark Hain</h3>
-				<h6>about 1 hour ago</h6>
+				<img src="images/index/twitter.jpg" width="100%">
+				<div class="overlay">
+					<i class="fa fa-twitter fa-2x"></i>
+					<h1>fringilla @<span>elijah</span>, nec venenatis sem posuere <br>quis. Sed sed faucibus ligula.</h1>
+					<h3>_ Mark Hain</h3>
+					<h6>about 1 hour ago</h6>
+				</div>
 			</figure>
 			<figure class="item">
-				<i class="fa fa-twitter fa-2x"></i>
-				<h1>fringilla @<span>elijah</span>, nec venenatis sem posuere <br>quis. Sed sed faucibus ligula.</h1>
-				<h3>_ Mark Hain</h3>
-				<h6>about 1 hour ago</h6>
+				<img src="images/index/twitter.jpg" width="100%">
+				<div class="overlay">
+					<i class="fa fa-twitter fa-2x"></i>
+					<h1>fringilla @<span>elijah</span>, nec venenatis sem posuere <br>quis. Sed sed faucibus ligula.</h1>
+					<h3>_ Mark Hain</h3>
+					<h6>about 1 hour ago</h6>
+				</div>
 			</figure>	
 		</div>
 
@@ -271,7 +285,7 @@
 			<div class="circle" id="dark-circle"></div>
 		</div>
 
-		<h2>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam<br> erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h2>
+		<h2>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h2>
 	</div>
 
 	<div class="row service-content">
@@ -356,11 +370,12 @@
 		</div>
 	</div>
 </section>
-<section class="container-fluid quote text-center">
-	<div class="brown-filter">
+<section class="container-fluid wordpress text-center">
+	<img src="images/index/wordpress.jpg" width="100%">
+	<div class="overlay">
 		<h1>ELIJAH IS AN AMAZING RESPONSIVE ONEPAGE WORDPRESS 
 			<br>THEME FOR YOUR BUSINESS</h1>
-		<button type="button" class="btn btn-warning"><i class="fa fa-magic"></i> GIVE IT A TRY</button>
+		<button type="button" class="btn btn-lg btn-orange"><i class="fa fa-magic"></i> GIVE IT A TRY</button>
 	</div>
 </section>
 <section class="container-fluid" id="portfolio">
@@ -371,7 +386,7 @@
 			<div class="circle" id="dark-circle"></div>
 		</div>
 
-		<h2>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam<br> erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h2>
+		<h2>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h2>
 	</div>
 
 	<div class="portfolio-iso text-center">
@@ -384,105 +399,127 @@
 				</ul>
 			</div>
 
-			<div class="container-fluid grid">
+			<div class="grid">
 				
 				<figure class="item photography">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<a href="portfolio_single.html">
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
 						<figcaption>
 							<h4>MAURIS ALIQUET SAPIEN</h4>
 							<div class="separator"></div>
 							<h5>Web Design / Photography</h5>
 						</figcaption>
-					</a>
+					</div>
 				</figure>
 				<figure class="item photography">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item branding">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item photography">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item mobile">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item mobile">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item branding">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item mobile">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item mobile">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item branding">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item web">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 				<figure class="item web">
-					<img src="images/index/portfolio.jpg" class="img-responsive" alt="portfolio">
-					<figcaption>
-						<h4>MAURIS ALIQUET SAPIEN</h4>
-						<div class="separator"></div>
-						<h5>Web Design / Photography</h5>
-					</figcaption>
+					<img src="images/index/portfolio.jpg" alt="portfolio">
+					<div class="layer">
+						<figcaption>
+							<h4>MAURIS ALIQUET SAPIEN</h4>
+							<div class="separator"></div>
+							<h5>Web Design / Photography</h5>
+						</figcaption>
+					</div>
 				</figure>
 
 			</div>
@@ -496,62 +533,69 @@
 			<div class="circle" id="dark-circle"></div>
 		</div>
 
-		<h2>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam<br> erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h2>
+		<h2>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h2>
 	</div>
 
 	<div class="container text-center">
-		<ul class="col-xs-12 col-md-4 col-lg-4 list-group">
-			<li class="list-group-item">
-				<div class="pricing-circle img-circle">19<small>$</small></div>
-				<h2>BASIC</h2>
-			</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Themes</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Perpetual Theme Updates</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Premium Technical Support</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Plugins</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Layered Photoshop Files</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> No Yearly Fees</li>
-			<li class="list-group-item">
-				<button class="btn"><i class="fa fa-thumbs-o-up"></i> SIGN UP TODAY</button>
-			</li>
-		</ul>
-		<ul class="col-xs-12 col-md-4 col-lg-4 list-group">
-			<li class="list-group-item">
-				<div class="pricing-circle img-circle">39<small>$</small></div>
-				<h2>STANDARD</h2>
-			</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Themes</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Perpetual Theme Updates</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Premium Technical Support</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Plugins</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Layered Photoshop Files</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> No Yearly Fees</li>
-			<li class="list-group-item">
-				<button class="btn"><i class="fa fa-thumbs-o-up"></i> SIGN UP TODAY</button>
-			</li>
-		</ul>
-		<ul class="col-xs-12 col-md-4 col-lg-4 list-group">
-			<li class="list-group-item">
-				<div class="pricing-circle img-circle">89<small>$</small></div>
-				<h2>PREMIUM</h2>
-			</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Themes</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Perpetual Theme Updates</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Premium Technical Support</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Plugins</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> Layered Photoshop Files</li>
-			<li class="list-group-item"><i class="fa fa-check"></i> No Yearly Fees</li>
-			<li class="list-group-item">
-				<button class="btn"><i class="fa fa-thumbs-o-up"></i> SIGN UP TODAY</button>
-			</li>
-		</ul>	
+		<div class="col-xs-12 col-md-4 col-lg-4 ">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<div class="pricing-circle">19<small>$</small></div>
+					<h2>BASIC</h2>
+				</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Themes</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Perpetual Theme Updates</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Premium Technical Support</li>
+				<li class="list-group-item"><i class="fa fa-times"></i> Complete Access To All Plugins</li>
+				<li class="list-group-item"><i class="fa fa-times"></i> Layered Photoshop Files</li>
+				<li class="list-group-item"><i class="fa fa-times"></i> No Yearly Fees</li>
+				<li class="list-group-item">
+					<button class="btn"><i class="fa fa-thumbs-o-up"></i> SIGN UP TODAY</button>
+				</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-4 ">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<div class="pricing-circle img-circle">39<small>$</small></div>
+					<h2>STANDARD</h2>
+				</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Themes</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Perpetual Theme Updates</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Premium Technical Support</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Plugins</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Layered Photoshop Files</li>
+				<li class="list-group-item"><i class="fa fa-times"></i> No Yearly Fees</li>
+				<li class="list-group-item">
+					<button class="btn"><i class="fa fa-thumbs-o-up"></i> SIGN UP TODAY</button>
+				</li>
+			</ul>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-4 ">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<div class="pricing-circle img-circle">89<small>$</small></div>
+					<h2>PREMIUM</h2>
+				</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Themes</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Perpetual Theme Updates</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Premium Technical Support</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Complete Access To All Plugins</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> Layered Photoshop Files</li>
+				<li class="list-group-item"><i class="fa fa-check"></i> No Yearly Fees</li>
+				<li class="list-group-item">
+					<button class="btn"><i class="fa fa-thumbs-o-up"></i> SIGN UP TODAY</button>
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>
-<section class="company-information quote">
-	<div class="brown-filter text-center">
-		<div class="keep-in-touch">KEEP IN TOUCH</div>
-		<div class="address">121 King Street, Melbourne, Victoria <br>3000, Austrailia</div>
-		<h2>Call Us: +61 6 5929 1838  &middot; Email: info@elijah.com</h2>
+<section class="container-fluid company-information">
+	<img src="images/index/keep-in-touch.jpg" width="100%" alt="Wordpress">
+	<div class="overlay">
+		<h1>KEEP IN TOUCH</h1>
+		<h2>121 King Street, Melbourne, Victoria <br>3000, Austrailia</h2>
+		<h3>Call Us: + 61 6 5929 1838  <span>&bull;</span> Email: <a href="mailto:">info@elijah.com</a></h3>
 	</div>
 </section>
 <section id="contact">
@@ -562,31 +606,33 @@
 			<div class="circle" id="dark-circle"></div>
 		</div>
 
-		<h2>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam<br> erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h2>
+		<h2>Nullam bibendum lorem condimentum <span>turpis hendrerit</span> aliquam. Aliquam erat volutpat. Aliquam ornare vehicula nunc, vitae viverra elit.</h2>
 	</div>
 
-	<div class="container-fluid contact-info">
-		<div class="col-md-4"></div>
+	<div class="container-fluid">
+		<div class="contact-info">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8375421143464!2d144.95352021531892!3d-37.81727407975172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd58ef1f9%3A0x924c91f561a4fd11!2s121+King+St%2C+Melbourne+VIC+3000%2C+%C3%9Ac!5e0!3m2!1svi!2s!4v1487588375120" width="100%" frameborder="0" style="border:0" height="865px"></iframe>
 			<form role="form" class="col-md-4">
 				<div class="form-group">
 					<label for="name" class="sr-only">Name</label>
-					<input type="text" name="name" placeholder="Name*" class="form-control">
+					<input type="text" class="form-control" name="name" placeholder="Name*">
 				</div>
 				<div class="form-group">
-					<label for="email" class="sr-only">Name</label>
-					<input type="emal" name="email" placeholder="Email*" class="form-control">
+					<label for="email" class="sr-only">Email</label>
+					<input type="emal" class="form-control" name="email" placeholder="Email*">
 				</div>
 				<div class="form-group">
-					<label for="subject" class="sr-only">Name</label>
-					<input type="text" name="subject" placeholder="Subject" class="form-control">
+					<label for="subject" class="sr-only">Subject</label>
+					<input type="text" class="form-control" name="subject" placeholder="Subject">
 				</div>
 				<div class="form-group">
-					<label for="message" class="sr-only">Name</label>
-					<input type="text" name="message" placeholder="Your message" class="form-control">
+					<label for="message" class="sr-only">Message</label>
+					<textarea type="text" class="form-control" name="message" placeholder="Your message" rows="6"></textarea>
 				</div>
 				
 				<button class="btn btn-orange form-control">SEND</button>
 			</form>
+		</div>
 	</div>
 </section>
 
@@ -600,30 +646,40 @@
 					<p>Curabitur molestie molestie velit, et porta velit gravida eget. Sed fermentum, orci nec.</p>
 					<p>Ullamcorper accumsan, mauris leo malesuada metus, a iaculis turpis ligula at odio. Praesent consectetur pulvinar velit ut condimentum. Nullam fermentum tristique metus, in venenatis enim euismod sed.</p>
 				</div>
+	<!--Recent posts-->	
+
 				<div class="col-md-3 recent-post">
 					<h4>RECENT POSTS</h4>
 					<figure class="row">
-						<img src="images/index/footer.jpg" alt="recent-post">
-						<figcaption>
-							<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
-							<h6>March 12, 2014</h6>
-						</figcaption>
+						<a href="">
+							<img src="images/index/footer.jpg" alt="recent-post">
+							<figcaption>
+								<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
+								<h6>March 12, 2014</h6>
+							</figcaption>
+						</a>
 					</figure>
 					<figure class="row">
-						<img src="images/index/footer.jpg" alt="recent-post">
-						<figcaption>
-							<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
-							<h6>March 12, 2014</h6>
-						</figcaption>
+						<a href="">
+							<img src="images/index/footer.jpg" alt="recent-post">
+							<figcaption>
+								<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
+								<h6>March 12, 2014</h6>
+							</figcaption>
+						</a>
 					</figure>
 					<figure class="row">
-						<img src="images/index/footer.jpg" alt="recent-post">
-						<figcaption>
-							<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
-							<h6>March 12, 2014</h6>
-						</figcaption>
+						<a href="">
+							<img src="images/index/footer.jpg" alt="recent-post">
+							<figcaption>
+								<p>Fusce neque erat, tempus at iaculis eu, sollicitudin.</p>
+								<h6>March 12, 2014</h6>
+							</figcaption>
+						</a>
 					</figure>
 				</div>
+	<!--Tags-->	
+
 				<div class="col-md-3 tags">
 					<h4>TAGS</h4>
 					<ul class="list-inline">
@@ -649,9 +705,11 @@
 						<a href=""><img src="images/index/footer-flickr.jpg" alt="flickr"></a>
 						<a href=""><img src="images/index/footer-flickr.jpg" alt="flickr"></a>
 						<a href=""><img src="images/index/footer-flickr.jpg" alt="flickr"></a>
+						<a href=""><img src="images/index/footer-flickr.jpg" alt="flickr"></a>
 					</figure>
 				</div>
 			</div>
+	<!--Connect us-->	
 
 			<hr>
 			<div class="row social">
