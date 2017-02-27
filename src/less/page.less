@@ -433,7 +433,7 @@ p {
 }
 
 #portfolio {
-	.portfolio-iso {
+	.iso-nav {
 		margin: 70px 0;
 		ul {
 			li {
@@ -456,28 +456,27 @@ p {
 					border: 1px solid @e-orange;
 				}
 		}
+	}
 		.grid {
-			.item {
-				width: 25%;
+			[class*="col-"],  /* Elements whose class attribute begins with "col-" */
+			[class^="col-"] { /* Elements whose class attribute contains the substring "col-" */
+				 padding-left: 0;
+				 padding-right: 0;
 			}
-			img {
-				width: 100%;
-				min-height: 268px;
-				@media only screen and (max-width:768px) {
-					min-height: 50px;
+			max-width: 1950px;
+			.grid-item {
+				img {
+					width: 100%;
+					height: auto;
 				}
 			}
-			figure { 
+			.hovereffect { 
 				position: relative;
 				figcaption {
 					.Background(@e-orange);
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					padding: 30% 0;
+					.absolute-center;
 					overflow: hidden;
+					padding: 30% 0;
 					.separator {
 						height: 2px;
 						width: 30%;
@@ -515,7 +514,7 @@ p {
 			}
 		}
 
-	}
+	
 	.rating {
 		padding: 30px 0;
 		&:not(i:last-child) {

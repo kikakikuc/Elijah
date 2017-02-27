@@ -4493,10 +4493,10 @@ p {
     padding-bottom: 30px;
   }
 }
-#portfolio .portfolio-iso {
+#portfolio .iso-nav {
   margin: 70px 0;
 }
-#portfolio .portfolio-iso ul li {
+#portfolio .iso-nav ul li {
   background-color: #f89a3d;
   color: white;
   font-size: 24px;
@@ -4506,43 +4506,45 @@ p {
   border-radius: 20px;
   box-shadow: 0 2px #dd8833;
 }
-#portfolio .portfolio-iso ul li:hover {
+#portfolio .iso-nav ul li:hover {
   color: #f89a3d;
   background-color: white;
   border: 1px solid #f89a3d;
   -webkit-transition: background-color 0.4s;
   cursor: pointer;
 }
-#portfolio .portfolio-iso ul .active {
+#portfolio .iso-nav ul .active {
   color: #f89a3d;
   background-color: white;
   border: 1px solid #f89a3d;
 }
-#portfolio .portfolio-iso .grid .item {
-  width: 25%;
+#portfolio .grid {
+  max-width: 1950px;
 }
-#portfolio .portfolio-iso .grid img {
+#portfolio .grid [class*="col-"],
+#portfolio .grid [class^="col-"] {
+  /* Elements whose class attribute contains the substring "col-" */
+  padding-left: 0;
+  padding-right: 0;
+}
+#portfolio .grid .grid-item img {
   width: 100%;
-  min-height: 268px;
+  height: auto;
 }
-@media only screen and (max-width: 768px) {
-  #portfolio .portfolio-iso .grid img {
-    min-height: 50px;
-  }
-}
-#portfolio .portfolio-iso .grid figure {
+#portfolio .grid .hovereffect {
   position: relative;
 }
-#portfolio .portfolio-iso .grid figure figcaption {
+#portfolio .grid .hovereffect figcaption {
   background-color: #f89a3d;
   color: white;
+  margin: auto;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 30% 0;
+  bottom: 0;
+  right: 0;
   overflow: hidden;
+  padding: 30% 0;
   -moz-opacity: 0;
   -khtml-opacity: 0;
   -webkit-opacity: 0;
@@ -4550,16 +4552,16 @@ p {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   filter: alpha(opacity=0);
 }
-#portfolio .portfolio-iso .grid figure figcaption .separator {
+#portfolio .grid .hovereffect figcaption .separator {
   height: 2px;
   width: 30%;
   margin: 10px auto;
   background-color: white;
 }
-#portfolio .portfolio-iso .grid figure figcaption h5 {
+#portfolio .grid .hovereffect figcaption h5 {
   font-weight: 300;
 }
-#portfolio .portfolio-iso .grid figure figcaption:hover {
+#portfolio .grid .hovereffect figcaption:hover {
   -moz-opacity: 1;
   -khtml-opacity: 1;
   -webkit-opacity: 1;
@@ -4567,10 +4569,10 @@ p {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
   filter: alpha(opacity=100);
 }
-#portfolio .portfolio-iso .small img {
+#portfolio .small img {
   min-height: 246px;
 }
-#portfolio .portfolio-iso button {
+#portfolio button {
   background-color: #f89a3d;
   color: white;
   font-size: 24px;
@@ -4580,7 +4582,7 @@ p {
   border-radius: 20px;
   box-shadow: 0 2px #dd8833;
 }
-#portfolio .portfolio-iso button:hover {
+#portfolio button:hover {
   color: #f89a3d;
   background-color: white;
   border: 1px solid #f89a3d;
