@@ -1,3 +1,11 @@
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 825) {
+        $('.navbar').addClass('navbar-fixed-top');
+    } else {
+        $('.navbar').removeClass('navbar-fixed-top');
+    }
+});
+
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
@@ -23,14 +31,6 @@ $("nav ul li").click(function() {
 	$(this).addClass('active').siblings().removeClass('active');
 });
 
-$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 825) {
-        $('.menu').addClass('navbar-fixed-top');
-    } else {
-        $('.menu').removeClass('navbar-fixed-top');
-    }
-});
-
 $('.counter').each(function() {
 	var $this = $(this),
 	  countTo = $this.attr('data-count');
@@ -39,7 +39,7 @@ $('.counter').each(function() {
 		countNum: countTo
 		},
   		{
-	    duration: 20000,
+	    duration: 10000,
 	    easing:'linear',
 	    step: function() {
 	      $this.text(Math.floor(this.countNum));

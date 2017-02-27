@@ -163,7 +163,6 @@ p {
 				span {
 					float: right;
 				}
-				-webkit-transition: -webkit-transform 5s;
 			}
 
 			height: 40px;
@@ -195,6 +194,9 @@ p {
 .twitter {
 	.carousel-indicators {
 		bottom: 90px;
+		@media only screen and (max-width:768px) {
+			bottom: 20px;
+		}
 		li {
 			background-color: white;
 			opacity: 0.5;
@@ -263,6 +265,14 @@ p {
 	.overlay {
 		padding: 70px 0;
 	}
+	@media screen and (max-width: 768px) {
+		.overlay {
+			padding: 20px 0;
+		}
+		h1 {
+			padding: 0;
+		}
+	}
 	button {
 		font-weight: 300;
 	}
@@ -273,26 +283,46 @@ p {
 		figure {
 			.view-profile {
 				position: relative;
+				.Background(@e-orange);
 				img {
+					position: relative;
 					width: 100%;
+					-webkit-transition: opacity 0.35s;
 				}
 				.over-lay {
 					.absolute-center();
 					.Background(@e-orange);
 					display:-webkit-flex;
 					-webkit-align-items: center;
-					h4{
+					-webkit-transform: scale(0.1);
+					-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+					h4 {
+						position: relative;
 						padding: 15px 0;
 						font-weight: 700;
 						width: 100%;
 						.Background(@e-dark);
+						-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+						-webkit-transform: translate3d(0,100%,0);
+						a {
+							color: white;
+						}
 					}
 					.opacity(0);
 				}
 	
 				&:hover {
+					.opacity(0.7);
+					img {
+						.opacity(0.7);
+					}
 					.over-lay{
-						.opacity(0.6);	
+						.opacity(0.7);
+						-webkit-transform: scale(1);
+						h4,a {
+								.opacity(1);
+								-webkit-transform: translate3d(0,0,0);
+						}	
 					}
 					
 				}
@@ -349,7 +379,7 @@ p {
 			i {
 				display: inline-block;
 				float: left;
-				padding: 0 25px 10px 10px;
+				padding: 0 20px 10px 10px;
 			}
 			h3 {
 				display: inline;
@@ -411,7 +441,7 @@ p {
 				font-size: 24px;
 				padding: 0px 30px;
 				margin: 0 10px 40px 10px;
-				border-color: @e-orange;
+				border: 1px solid @e-orange;
 				border-radius: 20px;
 				box-shadow: 0 2px #dd8833;
 				&:hover {
@@ -427,20 +457,23 @@ p {
 				}
 		}
 		.grid {
-
 			.item {
 				width: 25%;
 			}
 			img {
 				width: 100%;
 				min-height: 268px;
+				@media only screen and (max-width:768px) {
+					min-height: 50px;
+				}
 			}
 			figure { 
 				position: relative;
-				.layer {
+				figcaption {
 					.Background(@e-orange);
 					position: absolute;
 					top: 0;
+					left: 0;
 					width: 100%;
 					height: 100%;
 					padding: 30% 0;
@@ -459,6 +492,11 @@ p {
 						.opacity(1);
 					}
 				}
+			}
+		}
+		.small {
+			img {
+				min-height: 246px;
 			}
 		}
 		button {
@@ -525,40 +563,65 @@ p {
 				width: 100%;
 			}
 			figcaption {
-				.Background(@e-orange);
 				.absolute-center();
+				.Background(@e-orange);
 				width: 100%;
 				text-align: center;
-				padding: 20% 0;
-				.separator {
-						height: 1px;
+				padding: 10% 0;
+				overflow: hidden;
+				-webkit-transition: opacity 0.35s;
+				h4 {
+					position: relative;
+					overflow: hidden;
+					padding: 30px 0;
+					background-color: transparent;
+					&:after {
+						position: absolute;
+						left: 35%; bottom: 10%;
 						width: 30%;
-						margin: 10px auto;
+						height: 2px;
+						content: '';
 						background-color: white;
+						-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+						-webkit-transform: translate3d(-100%,0,0);
 					}
+				}
 				h5 {
 					font-weight: 300;
+					padding: 5px 0;
+					opacity:0;
+					-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+					-webkit-transform: translate3d(100%,0,0);
 				}
 				.opacity(0);
-				&:hover	{
+				&:hover {
 					.opacity(1);
+					h4 {
+						&:after {
+							-webkit-transform: translate3d(0,0,0);
+						}
+					}
+					h5 {
+						.opacity(1);
+						-webkit-transform: translate3d(0,0,0);
+					}
 				}
 			}
 		}
 	}
 	.comment-form {
-			padding-bottom: 150px;
-			.form-control {
-				margin: 10px 0;
-				padding: 20px 20px;
-				border-radius: 0;
-				border-color: @e-light;
-				.placeholder(@e-orange);
-			}
-			button {
-				float: right;
-			}
+		padding-bottom: 150px;
+		.form-control {
+			margin: 10px 0;
+			padding: 20px 20px;
+			border-radius: 0;
+			border-color: @e-light;
+			.placeholder(@e-orange);
 		}
+		button {
+			float: right;
+		}
+	}
 }
 
 #pricing {
