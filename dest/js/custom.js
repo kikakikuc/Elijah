@@ -1,3 +1,4 @@
+// 	FIXED MENU
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 825) {
         $('.navbar').addClass('navbar-fixed-top');
@@ -10,7 +11,7 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
 
-//isotope
+// ISOTOPE
 
 $(".grid").isotope({
 	itemSelector: '.grid-item',
@@ -32,10 +33,16 @@ $('.iso-nav ul li').click(function(){
     return false;
 });
 
+
+// MENU
+
 $("nav ul li").click(function() {
 	var selectedTab = $(this).attr('tab');
 	$(this).addClass('active').siblings().removeClass('active');
 });
+
+
+//COUNTER
 
 $('.counter').each(function() {
 	var $this = $(this),
@@ -57,4 +64,20 @@ $('.counter').each(function() {
 
   });
 });
+
+ $(document).ready(function() {
+      $('.progress .progress-bar').css("width",
+                function() {
+                    return $(this).attr("aria-valuenow") + "%";
+                }
+        )
+    });
+
+// $(".search-input,.close-search").hide();
+// $(".open-search").click(function(){
+//     $(".search-engine").show();
+// });
+// $(".close-search").click(function(){ 
+// 	    $(".search-engine").hide();
+// });
 

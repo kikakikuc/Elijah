@@ -22,6 +22,11 @@ p {
 	font-weight: 300;
 	font-size: 16px;
 }
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+}
 .font-size-logo {
 	font-size: 100px;
 	@media only screen and (max-width:768px) {
@@ -84,6 +89,7 @@ p {
 
 .heading{
 		padding: 160px 120px;
+		text-align: center;
 		.title-circle {
 			position: relative;
 			width: 270px;
@@ -163,6 +169,7 @@ p {
 				span {
 					float: right;
 				}
+				-webkit-transition: width 3s;
 			}
 
 			height: 40px;
@@ -301,6 +308,7 @@ p {
 						padding: 15px 0;
 						font-weight: 700;
 						width: 100%;
+						text-align: center;
 						.Background(@e-dark);
 						-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 						-webkit-transform: translate3d(0,100%,0);
@@ -344,6 +352,7 @@ p {
 
 	.clients {
 		padding: 40px 0;
+		text-align: center;
 		p {
 			&:first-child {
 				.Text-light;
@@ -354,20 +363,25 @@ p {
 		}
 		figure {
 			padding: 40px 0;
-			a{
+			img{
 				padding: 20px;
+				-webkit-filter: grayscale(100%);
+				&:hover {
+					-webkit-transition: -webkit-filter 0.35s;
+					-webkit-filter: none;
+				}
 			}
 			div {
 				margin-top: 15px;
 				.tooltip-arrow {
-					color: @e-light;
+					border-bottom-color: @e-light;
+				}
+				.tooltip-inner {
+					background-color: @e-light;
+					padding: 8px 12px;
 				}
 			}
 			
-			.tooltip-inner {
-				background-color: @e-light;
-				padding: 8px 12px;
-			}
 		}
 	}
 }
@@ -397,11 +411,16 @@ p {
 		}
 		
 		.client {
+			padding: 90px 0;
 			&>p {
 				font-style: Italic;
-				padding: 70px 65px 70px 15px;
+				padding: 0px 65px 0 15px;
 				@media only screen and (max-width:768px) {
-					padding:30px 0;
+					padding: 0 15px;
+				}
+				&:after {
+					content: url(../images/index/client-shadow.jpg);
+					margin: 40px 0 30px 0;
 				}
 			}
 			figure {
@@ -422,11 +441,11 @@ p {
 				h6 {
 					font-style: Italic;
 					font-size: 12px;
+					color: @e-silver;
 				}
 			}
-			padding-bottom: 100px;
 			@media only screen and (max-width:768px) {
-				padding-bottom: 30px;
+				padding: 50px 0;
 			}
 		}
 	}
@@ -458,17 +477,22 @@ p {
 		}
 	}
 		.grid {
+
 			[class*="col-"],  /* Elements whose class attribute begins with "col-" */
 			[class^="col-"] { /* Elements whose class attribute contains the substring "col-" */
 				 padding-left: 0;
 				 padding-right: 0;
 			}
+
 			max-width: 1950px;
 			.grid-item {
 				img {
 					width: 100%;
 					height: auto;
 				}
+			}
+			.grid-spacing {
+				padding: 15px;
 			}
 			.hovereffect { 
 				position: relative;
@@ -491,11 +515,6 @@ p {
 						.opacity(1);
 					}
 				}
-			}
-		}
-		.small {
-			img {
-				min-height: 246px;
 			}
 		}
 		button {
@@ -551,6 +570,11 @@ p {
 						border-bottom: 1px dotted @e-orange;
 					}
 				}
+			}
+		}
+		@media screen and (max-width: 768px) {
+			figure {
+				padding: 40px 0;
 			}
 		}
 	}
@@ -625,14 +649,13 @@ p {
 
 #pricing {
 	ul {
-
 		.pricing-circle {
 			width: 140px;
 			height: 140px;
 			text-align: center;
 			display: inline-block;
 			.Background(@e-dark);
-			.font-size-medium;
+			font-size: 48px;
 			padding: 12% 0;
 			border-radius: 50%;
 			margin: 40px 0;
@@ -716,6 +739,10 @@ p {
 			&:hover {
 				color: @e-orange;
 			}
+		}
+		@media screen and (max-width: 768px) {
+			padding: 20px 45px;
+			line-height: 25px;
 		}
 	}
 	

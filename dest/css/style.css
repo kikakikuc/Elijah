@@ -4035,6 +4035,11 @@ p {
   font-weight: 300;
   font-size: 16px;
 }
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .font-size-logo {
   font-size: 100px;
 }
@@ -4068,7 +4073,7 @@ p {
   }
 }
 .Text-light {
-  color: #c3c3c3;
+  color: #a9a9a9;
   padding: 30px 0;
   text-align: center;
 }
@@ -4102,6 +4107,7 @@ p {
 }
 .heading {
   padding: 160px 120px;
+  text-align: center;
 }
 .heading .title-circle {
   position: relative;
@@ -4177,7 +4183,7 @@ p {
   background-color: white;
 }
 #about .intro-skill > p {
-  color: #c3c3c3;
+  color: #a9a9a9;
   padding: 30px 0;
   text-align: center;
 }
@@ -4191,12 +4197,13 @@ p {
   color: white;
   font-size: 16px;
   padding: 10px 20px;
+  -webkit-transition: width 3s;
 }
 #about .intro-skill .progress .progress-bar span {
   float: right;
 }
 #about .fun-fact > p {
-  color: #c3c3c3;
+  color: #a9a9a9;
   padding: 30px 0;
   text-align: center;
 }
@@ -4352,6 +4359,7 @@ p {
   padding: 15px 0;
   font-weight: 700;
   width: 100%;
+  text-align: center;
   background-color: #566065;
   color: white;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -4409,9 +4417,10 @@ p {
 }
 #team .clients {
   padding: 40px 0;
+  text-align: center;
 }
 #team .clients p:first-child {
-  color: #c3c3c3;
+  color: #a9a9a9;
   padding: 30px 0;
   text-align: center;
 }
@@ -4421,17 +4430,22 @@ p {
 #team .clients figure {
   padding: 40px 0;
 }
-#team .clients figure a {
+#team .clients figure img {
   padding: 20px;
+  -webkit-filter: grayscale(100%);
+}
+#team .clients figure img:hover {
+  -webkit-transition: -webkit-filter 0.35s;
+  -webkit-filter: none;
 }
 #team .clients figure div {
   margin-top: 15px;
 }
 #team .clients figure div .tooltip-arrow {
-  color: #c3c3c3;
+  border-bottom-color: #a9a9a9;
 }
-#team .clients figure .tooltip-inner {
-  background-color: #c3c3c3;
+#team .clients figure div .tooltip-inner {
+  background-color: #a9a9a9;
   padding: 8px 12px;
 }
 #services .service-content article {
@@ -4453,28 +4467,32 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 #services .testimonial > p {
-  color: #c3c3c3;
+  color: #a9a9a9;
   padding: 30px 0;
   text-align: center;
 }
 #services .testimonial .client {
-  padding-bottom: 100px;
+  padding: 90px 0;
 }
 #services .testimonial .client > p {
   font-style: Italic;
-  padding: 70px 65px 70px 15px;
+  padding: 0px 65px 0 15px;
 }
 @media only screen and (max-width: 768px) {
   #services .testimonial .client > p {
-    padding: 30px 0;
+    padding: 0 15px;
   }
+}
+#services .testimonial .client > p:after {
+  content: url(../images/index/client-shadow.jpg);
+  margin: 40px 0 30px 0;
 }
 #services .testimonial .client figure img {
   width: 100px;
   height: 100px;
 }
 #services .testimonial .client figure img[alt] {
-  background-color: #c3c3c3;
+  background-color: #a9a9a9;
   color: white;
 }
 #services .testimonial .client figcaption {
@@ -4487,10 +4505,11 @@ p {
 #services .testimonial .client figcaption h6 {
   font-style: Italic;
   font-size: 12px;
+  color: #c3c3c3;
 }
 @media only screen and (max-width: 768px) {
   #services .testimonial .client {
-    padding-bottom: 30px;
+    padding: 50px 0;
   }
 }
 #portfolio .iso-nav {
@@ -4531,6 +4550,9 @@ p {
   width: 100%;
   height: auto;
 }
+#portfolio .grid .grid-spacing {
+  padding: 15px;
+}
 #portfolio .grid .hovereffect {
   position: relative;
 }
@@ -4568,9 +4590,6 @@ p {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
   filter: alpha(opacity=100);
-}
-#portfolio .small img {
-  min-height: 246px;
 }
 #portfolio button {
   background-color: #f89a3d;
@@ -4622,6 +4641,11 @@ p {
   color: #f89a3d;
   background-color: white;
   border-bottom: 1px dotted #f89a3d;
+}
+@media screen and (max-width: 768px) {
+  #portfolio .portfolio_container figure {
+    padding: 40px 0;
+  }
 }
 #portfolio .related-work .container-work {
   position: relative;
@@ -4701,7 +4725,7 @@ p {
   margin: 10px 0;
   padding: 20px 20px;
   border-radius: 0;
-  border-color: #c3c3c3;
+  border-color: #a9a9a9;
 }
 #portfolio .comment-form .form-control::-moz-placeholder {
   color: #f89a3d;
@@ -4743,11 +4767,6 @@ p {
   border-radius: 50%;
   margin: 40px 0;
   -webkit-transition: background-color 0.2s;
-}
-@media only screen and (max-width: 768px) {
-  #pricing ul .pricing-circle {
-    font-size: 3rem;
-  }
 }
 #pricing ul h2 {
   padding: 20px 0;
@@ -4854,6 +4873,12 @@ p {
 .company-information h3 a:hover {
   color: #f89a3d;
 }
+@media screen and (max-width: 768px) {
+  .company-information h3 {
+    padding: 20px 45px;
+    line-height: 25px;
+  }
+}
 #contact .contact-info {
   position: relative;
 }
@@ -4891,14 +4916,14 @@ p {
   padding-right: 20px;
 }
 .blog .blog-main figcaption ul li a {
-  color: #c3c3c3;
+  color: #a9a9a9;
 }
 .blog .blog-main figcaption blockquote {
   border-color: #abcdc0;
   margin-left: 20px;
 }
 .blog .blog-main figcaption blockquote p {
-  color: #c3c3c3;
+  color: #a9a9a9;
   font-style: normal;
 }
 .blog .blog-main figcaption .prev-next {
@@ -4908,7 +4933,7 @@ p {
 .blog .blog-main figcaption .next p,
 .blog .blog-main figcaption .prev a,
 .blog .blog-main figcaption .next a {
-  color: #c3c3c3;
+  color: #a9a9a9;
 }
 .blog .blog-main figcaption .prev:hover p,
 .blog .blog-main figcaption .next:hover p,
@@ -4924,7 +4949,7 @@ p {
 }
 .blog .blog-main .author-box figcaption i {
   float: right;
-  color: #c3c3c3;
+  color: #a9a9a9;
   margin: 0 5px;
 }
 .blog .blog-main .author-box figcaption i:hover {
@@ -4941,7 +4966,7 @@ p {
 }
 .blog .blog-main .author-box figcaption .report-reply,
 .blog .blog-main .author-box figcaption a {
-  color: #c3c3c3;
+  color: #a9a9a9;
   padding: 15px 0;
 }
 .blog .blog-main h4 {
@@ -5050,13 +5075,13 @@ p {
 .blog .blog-sidebar form input {
   margin: 20px 0;
   border: none;
-  border-bottom: 1px solid #c3c3c3;
+  border-bottom: 1px solid #a9a9a9;
 }
 .blog .blog-sidebar form input:focus {
   border-color: #566065;
 }
 .blog .blog-sidebar .search input {
-  border-bottom: 1px solid #c3c3c3;
+  border-bottom: 1px solid #a9a9a9;
   padding: 20px;
 }
 .blog .blog-sidebar .search input:focus {
@@ -5104,7 +5129,7 @@ p {
 }
 .blog .blog-sidebar .sidebar-content p a span {
   font-size: 14px;
-  color: #c3c3c3;
+  color: #a9a9a9;
 }
 .blog .blog-sidebar .sidebar-content p:hover a {
   color: #f68009;
@@ -5115,10 +5140,10 @@ p {
 .blog .blog-sidebar .tags li {
   padding: 5px 10px;
   margin: 5px;
-  border: 1px solid #c3c3c3;
+  border: 1px solid #a9a9a9;
 }
 .blog .blog-sidebar .tags li a {
-  color: #c3c3c3;
+  color: #a9a9a9;
 }
 .blog .blog-sidebar .tags li:hover {
   border: 1px solid #f89a3d;
@@ -5167,35 +5192,37 @@ p {
 .home a:hover {
   color: #f89a3d;
 }
-.navbar {
+nav {
   padding: 20px 40px;
   font-family: 'Oswald', sans-serif;
   background-color: white;
 }
-.navbar .navbar-header .navbar-toggle {
+nav .navbar-header .navbar-toggle {
   margin: 0;
 }
-.navbar .navbar-header h1 {
+nav .navbar-header h1 {
   display: inline;
 }
-.navbar .navbar-header h1 a {
+nav .navbar-header h1 a {
   color: #f89a3d;
   background-color: white;
   font-weight: 400;
 }
-.navbar .navbar-collapse {
-  padding: 0;
+@media screen and (min-width: 768px) {
+  nav .navbar-collapse {
+    padding: 0;
+  }
 }
-.navbar .nav li {
+nav .nav li {
   padding: 0 15px;
 }
-.navbar .nav li a {
+nav .nav li a {
   font-size: 18px;
   position: relative;
   overflow: hidden;
   padding: 10px 0 25px 0;
 }
-.navbar .nav li a:after {
+nav .nav li a:after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -5207,20 +5234,20 @@ p {
   -webkit-transition: -webkit-transform 0.35s;
   -webkit-transform: translate3d(-101%, 0, 0);
 }
-.navbar .nav li:focus a,
-.navbar .nav li:hover a {
+nav .nav li:focus a,
+nav .nav li:hover a {
   color: #f89a3d;
   background-color: white;
 }
-.navbar .nav li:focus a:after,
-.navbar .nav li:hover a:after {
+nav .nav li:focus a:after,
+nav .nav li:hover a:after {
   -webkit-transform: translate3d(0, 0, 0);
 }
-.navbar .nav .active a {
+nav .nav .active a {
   color: #f89a3d;
   background-color: white;
 }
-.navbar .nav .active a:after {
+nav .nav .active a:after {
   -webkit-transform: translate3d(0, 0, 0);
 }
 footer {
